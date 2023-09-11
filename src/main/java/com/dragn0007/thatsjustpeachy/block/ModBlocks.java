@@ -24,7 +24,7 @@ public class ModBlocks {
             = DeferredRegister.create(ForgeRegistries.BLOCKS, ThatsJustPeachy.MODID);
 
 
-    //Ores & Ore Blocks
+    //Cake
     public static final RegistryObject<Block> PEACH_CAKE = registerBlockWithoutItem("peach_cake",
             () -> new CakeBlock(BlockBehaviour.Properties.of(Material.CAKE).strength(0.5F).sound(SoundType.WOOL)));
 
