@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "thatsjustpeachy:block/peach_sapling"
+  }
+}

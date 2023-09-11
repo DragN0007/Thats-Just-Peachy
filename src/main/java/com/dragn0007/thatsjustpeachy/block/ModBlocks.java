@@ -3,13 +3,11 @@ package com.dragn0007.thatsjustpeachy.block;
 import com.dragn0007.thatsjustpeachy.ThatsJustPeachy;
 import com.dragn0007.thatsjustpeachy.item.ModItemGroup;
 import com.dragn0007.thatsjustpeachy.item.ModItems;
-import net.minecraft.world.effect.MobEffects;
+import com.dragn0007.thatsjustpeachy.world.feature.tree.PeachTreeGrower;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -17,7 +15,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
-import java.util.function.ToIntFunction;
 
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS
@@ -27,6 +24,24 @@ public class ModBlocks {
     //Cake
     public static final RegistryObject<Block> PEACH_CAKE = registerBlockWithoutItem("peach_cake",
             () -> new CakeBlock(BlockBehaviour.Properties.of(Material.CAKE).strength(0.5F).sound(SoundType.WOOL)));
+
+
+    //Tree
+    public static final RegistryObject<RotatedPillarBlock> PEACH_LOG = registerBlock("peach_log",
+            () -> new RotatedPillarBlock(Block.Properties.of(Material.WOOD)
+                    .strength(2.0F, 3.0F)));
+    public static final RegistryObject<Block> PEACH_PLANKS = registerBlock("peach_planks",
+            () -> new Block(Block.Properties.of(Material.WOOD)
+                    .strength(2.0F, 3.0F)));
+    public static final RegistryObject<Block> PEACH_LEAVES = registerBlock("peach_leaves",
+            () -> new LeavesBlock(Block.Properties.of(Material.LEAVES).strength(0.2F).randomTicks().sound(SoundType.GRASS).noOcclusion()));
+    public static final RegistryObject<Block> PEACH_SAPLING = registerBlock("peach_sapling",
+            () -> new SaplingBlock(new PeachTreeGrower(), Block.Properties.of(Material.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.GRASS)));
+    public static final RegistryObject<Block> PEACH_STAIRS = registerBlock("peach_stairs",
+            () -> new StairBlock(PEACH_PLANKS.get().defaultBlockState(), Block.Properties.copy(Blocks.OAK_PLANKS)));
+    public static final RegistryObject<Block> PEACH_SLAB = registerBlock("peach_slab",
+            () -> new SlabBlock(Block.Properties.of(Material.WOOD)
+                    .strength(2.0F, 3.0F)));
 
 
     private static <T extends Block>RegistryObject<T> registerBlockWithoutItem(String name, Supplier<T> block){

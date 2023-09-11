@@ -1,0 +1,22 @@
+{
+  "item.thatsjustpeachy.peach": "Peach",
+  "item.thatsjustpeachy.peach_cake": "Peach Cake",
+  "item.thatsjustpeachy.peach_pie": "Peach Pie",
+  "item.thatsjustpeachy.peach_tea": "Peach Tea",
+  "item.thatsjustpeachy.peach_boba": "Peach Boba Tea",
+  "item.thatsjustpeachy.peach_juice": "Peach Juice",
+  "item.thatsjustpeachy.peach_jam": "Peach Jam",
+  "item.thatsjustpeachy.peach_toast": "Peach Jam & Toast",
+  "item.thatsjustpeachy.peach_icecream": "Peaches & Ice Cream",
+
+  "block.thatsjustpeachy.peach_cake": "Peach Cake",
+  "block.thatsjustpeachy.peach_leaves": "Peach Leaves",
+  "block.thatsjustpeachy.peach_log": "Peach Log",
+  "block.thatsjustpeachy.peach_planks": "Peach Planks",
+  "block.thatsjustpeachy.peach_slab": "Peach Slab",
+  "block.thatsjustpeachy.peach_stairs": "Peach Stairs",
+  "block.thatsjustpeachy.peach_sapling": "Peach Sapling",
+
+
+  "itemGroup.PeachModTab": "That's Just Peachy!"
+}
