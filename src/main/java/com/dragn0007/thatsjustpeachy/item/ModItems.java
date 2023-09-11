@@ -1,7 +1,7 @@
 package com.dragn0007.thatsjustpeachy.item;
 
 
-import com.dragn0007.thatsjustpeachy.JustPeachy;
+import com.dragn0007.thatsjustpeachy.ThatsJustPeachy;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
@@ -15,7 +15,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModItems {
 
     public static final DeferredRegister<Item> ITEMS =
-            DeferredRegister.create(ForgeRegistries.ITEMS, JustPeachy.MODID);
+            DeferredRegister.create(ForgeRegistries.ITEMS, ThatsJustPeachy.MODID);
 
 
     //Food

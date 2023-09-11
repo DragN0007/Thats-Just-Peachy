@@ -19,17 +19,17 @@ import org.slf4j.Logger;
 
 import java.util.stream.Collectors;
 
-import static com.dragn0007.thatsjustpeachy.JustPeachy.MODID;
+import static com.dragn0007.thatsjustpeachy.ThatsJustPeachy.MODID;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(MODID)
-public class JustPeachy
+public class ThatsJustPeachy
 {
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
-    public static final String MODID = "justpeachy";
+    public static final String MODID = "thatsjustpeachy";
 
-    public JustPeachy()
+    public ThatsJustPeachy()
     {
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
