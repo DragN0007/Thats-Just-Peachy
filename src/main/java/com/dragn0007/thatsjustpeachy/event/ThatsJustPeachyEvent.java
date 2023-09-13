@@ -19,6 +19,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
     @SubscribeEvent
     public static void clientSetupEvent(FMLClientSetupEvent event) {
 
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.PEACH_DOOR.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.PEACH_TRAPDOOR.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.PEACH_LEAVES.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.PEACH_SAPLING.get(), RenderType.cutout());
 

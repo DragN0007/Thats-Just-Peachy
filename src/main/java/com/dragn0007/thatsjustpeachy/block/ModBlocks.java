@@ -49,7 +49,10 @@ public class ModBlocks {
             () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
     public static final RegistryObject<Block> PEACH_TRAPDOOR = registerBlock("peach_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
-
+    public static final RegistryObject<Block> PEACH_FENCE = registerBlock("peach_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD) .strength(2.0F, 3.0F).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> PEACH_FENCE_GATE = registerBlock("peach_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD)));
 
 
     private static <T extends Block>RegistryObject<T> registerBlockWithoutItem(String name, Supplier<T> block){

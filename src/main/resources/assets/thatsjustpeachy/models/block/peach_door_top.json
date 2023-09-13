@@ -1,5 +1,5 @@
 {
-  "parent": "thatsjustpeachy:block/door_top",
+  "parent": "minecraft:block/door_top",
   "textures": {
     "top": "thatsjustpeachy:block/peach_door_top",
     "bottom": "thatsjustpeachy:block/peach_door_bottom"

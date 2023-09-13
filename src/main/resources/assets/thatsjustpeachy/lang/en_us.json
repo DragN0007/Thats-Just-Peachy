@@ -16,6 +16,11 @@
   "block.thatsjustpeachy.peach_slab": "Peach Slab",
   "block.thatsjustpeachy.peach_stairs": "Peach Stairs",
   "block.thatsjustpeachy.peach_sapling": "Peach Sapling",
+  "block.thatsjustpeachy.peach_door": "Peach Door",
+  "block.thatsjustpeachy.peach_trapdoor": "Peach Trapdoor",
+  "block.thatsjustpeachy.peach_fence": "Peach Fence",
+  "block.thatsjustpeachy.peach_fence_gate": "Peach Fence Gate",
+
 
 
   "itemGroup.PeachModTab": "That's Just Peachy!"

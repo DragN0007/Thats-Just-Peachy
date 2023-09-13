@@ -1,5 +1,5 @@
 {
-  "parent": "thatsjustpeachy:block/template_orientable_trapdoor_top",
+  "parent": "minecraft:block/template_orientable_trapdoor_top",
   "textures": {
     "texture": "thatsjustpeachy:block/peach_trapdoor"
   }

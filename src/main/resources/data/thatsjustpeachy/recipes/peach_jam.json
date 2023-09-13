@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:peach"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+
+  "result": {
+    "item": "thatsjustpeachy:peach_jam",
+    "count": 1
+  }
+}

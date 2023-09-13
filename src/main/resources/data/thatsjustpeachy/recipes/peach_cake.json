@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_stairs",
+  "pattern": [
+    "DAD",
+    "BEB",
+    "CCC"
+  ],
+  "key": {
+    "A": {
+      "tag": "forge:peach"
+    },
+    "B": {
+      "item": "minecraft:sugar"
+    },
+    "C": {
+      "item": "minecraft:wheat"
+    },
+    "D": {
+      "tag": "forge:milk"
+    },
+    "E": {
+      "tag": "forge:egg"
+    }
+  },
+  "result": {
+    "item": "thatsjustpeachy:peach_cake",
+    "count": 1
+  }
+}

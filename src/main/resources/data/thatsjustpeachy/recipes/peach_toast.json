@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "thatsjustpeachy:peach_jam"
+    },
+    {
+      "item": "minecraft:bread"
+    }
+  ],
+
+  "result": {
+    "item": "thatsjustpeachy:peach_toast",
+    "count": 2
+  }
+}
