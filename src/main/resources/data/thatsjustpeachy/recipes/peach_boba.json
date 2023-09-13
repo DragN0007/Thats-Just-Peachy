@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "forge:peach_juice"
+      "tag": "forge:peach_juice"
     },
     {
       "tag": "forge:leaves"
