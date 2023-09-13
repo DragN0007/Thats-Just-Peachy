@@ -9,12 +9,15 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.MaterialColor;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
+
+import static net.minecraft.world.level.block.Blocks.OAK_PLANKS;
 
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS
@@ -38,10 +41,15 @@ public class ModBlocks {
     public static final RegistryObject<Block> PEACH_SAPLING = registerBlock("peach_sapling",
             () -> new SaplingBlock(new PeachTreeGrower(), Block.Properties.of(Material.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.GRASS)));
     public static final RegistryObject<Block> PEACH_STAIRS = registerBlock("peach_stairs",
-            () -> new StairBlock(PEACH_PLANKS.get().defaultBlockState(), Block.Properties.copy(Blocks.OAK_PLANKS)));
+            () -> new StairBlock(PEACH_PLANKS.get().defaultBlockState(), Block.Properties.copy(OAK_PLANKS)));
     public static final RegistryObject<Block> PEACH_SLAB = registerBlock("peach_slab",
             () -> new SlabBlock(Block.Properties.of(Material.WOOD)
                     .strength(2.0F, 3.0F)));
+    public static final RegistryObject<Block> PEACH_DOOR = registerBlock("peach_door",
+            () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static final RegistryObject<Block> PEACH_TRAPDOOR = registerBlock("peach_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+
 
 
     private static <T extends Block>RegistryObject<T> registerBlockWithoutItem(String name, Supplier<T> block){

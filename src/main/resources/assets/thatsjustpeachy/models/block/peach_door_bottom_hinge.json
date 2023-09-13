@@ -1,0 +1,7 @@
+{
+  "parent": "thatsjustpeachy:block/door_bottom_rh",
+  "textures": {
+    "top": "thatsjustpeachy:block/peach_door_top",
+    "bottom": "thatsjustpeachy:block/peach_door_bottom"
+  }
+}
