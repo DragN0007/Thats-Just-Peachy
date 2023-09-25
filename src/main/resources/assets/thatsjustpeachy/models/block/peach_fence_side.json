@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/fence_side",
+  "textures": {
+    "texture": "thatsjustpeachy:block/peach_planks"
+  },
+  "render_type": "cutout"
+}

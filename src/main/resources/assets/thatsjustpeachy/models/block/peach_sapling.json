@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "thatsjustpeachy:block/peach_sapling"
+  },
+  "render_type": "cutout"
+}

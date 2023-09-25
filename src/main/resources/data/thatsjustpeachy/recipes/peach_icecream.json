@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:peach"
+    },
+    {
+      "tag": "forge:milk"
+    },
+    {
+      "item": "minecraft:snow_block"
+    },
+    {
+      "item": "thatsjustpeachy:peach_jam"
+    }
+  ],
+
+  "result": {
+    "item": "thatsjustpeachy:peach_icecream",
+    "count": 1
+  }
+}

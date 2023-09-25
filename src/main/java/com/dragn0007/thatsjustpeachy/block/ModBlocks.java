@@ -1,0 +1,75 @@
+package com.dragn0007.thatsjustpeachy.block;
+
+import com.dragn0007.thatsjustpeachy.ThatsJustPeachy;
+import com.dragn0007.thatsjustpeachy.item.ModItemGroup;
+import com.dragn0007.thatsjustpeachy.item.ModItems;
+import com.dragn0007.thatsjustpeachy.world.feature.tree.PeachTreeGrower;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.Material;
+import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
+
+import java.util.function.Supplier;
+
+import static net.minecraft.world.level.block.Blocks.OAK_PLANKS;
+
+public class ModBlocks {
+    public static final DeferredRegister<Block> BLOCKS
+            = DeferredRegister.create(ForgeRegistries.BLOCKS, ThatsJustPeachy.MODID);
+
+
+    //Cake
+    public static final RegistryObject<Block> PEACH_CAKE = registerBlockWithoutItem("peach_cake",
+            () -> new CakeBlock(BlockBehaviour.Properties.of(Material.CAKE).strength(0.5F).sound(SoundType.WOOL)));
+
+
+    //Tree
+    public static final RegistryObject<RotatedPillarBlock> PEACH_LOG = registerBlock("peach_log",
+            () -> new RotatedPillarBlock(Block.Properties.of(Material.WOOD)
+                    .strength(2.0F, 3.0F)));
+    public static final RegistryObject<Block> PEACH_PLANKS = registerBlock("peach_planks",
+            () -> new Block(Block.Properties.of(Material.WOOD)
+                    .strength(2.0F, 3.0F)));
+    public static final RegistryObject<Block> PEACH_LEAVES = registerBlock("peach_leaves",
+            () -> new LeavesBlock(Block.Properties.of(Material.LEAVES).strength(0.2F).randomTicks().sound(SoundType.GRASS).noOcclusion()));
+    public static final RegistryObject<Block> PEACH_SAPLING = registerBlock("peach_sapling",
+            () -> new SaplingBlock(new PeachTreeGrower(), Block.Properties.of(Material.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.GRASS)));
+    public static final RegistryObject<Block> PEACH_STAIRS = registerBlock("peach_stairs",
+            () -> new StairBlock(PEACH_PLANKS.get().defaultBlockState(), Block.Properties.copy(OAK_PLANKS)));
+    public static final RegistryObject<Block> PEACH_SLAB = registerBlock("peach_slab",
+            () -> new SlabBlock(Block.Properties.of(Material.WOOD)
+                    .strength(2.0F, 3.0F)));
+    public static final RegistryObject<Block> PEACH_DOOR = registerBlock("peach_door",
+            () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static final RegistryObject<Block> PEACH_TRAPDOOR = registerBlock("peach_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static final RegistryObject<Block> PEACH_FENCE = registerBlock("peach_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD) .strength(2.0F, 3.0F).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> PEACH_FENCE_GATE = registerBlock("peach_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD)));
+
+
+    private static <T extends Block>RegistryObject<T> registerBlockWithoutItem(String name, Supplier<T> block){
+        return BLOCKS.register(name, block);
+    }
+
+    private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block){
+        RegistryObject<T> toReturn = BLOCKS.register(name, block);
+        registerBlockItem(name, toReturn);
+        return toReturn;
+    }
+    private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block) {
+        ModItems.ITEMS.register(name, () -> new BlockItem(block.get(),
+                new Item.Properties().tab(ModItemGroup.GROUP)));
+    }
+
+
+    public static void register(IEventBus eventBus) {
+        BLOCKS.register(eventBus);
+    }
+}

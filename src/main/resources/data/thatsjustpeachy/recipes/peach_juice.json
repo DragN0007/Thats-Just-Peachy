@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:peach"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  ],
+
+  "result": {
+    "item": "thatsjustpeachy:peach_juice",
+    "count": 1
+  }
+}

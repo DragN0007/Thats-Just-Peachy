@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_fence_gate_open",
+  "textures": {
+    "texture": "thatsjustpeachy:block/peach_planks"
+  },
+  "render_type": "cutout"
+}
