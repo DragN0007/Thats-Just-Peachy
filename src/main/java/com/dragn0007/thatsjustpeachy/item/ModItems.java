@@ -43,7 +43,7 @@ public class ModItems {
                     new MobEffectInstance(MobEffects.SATURATION, 2880, 1, true, false)
             ));
     public static final RegistryObject<Item> PEACH_BOBA = ITEMS.register("peach_boba",
-            () -> new CustomDrinkItem(
+            () -> new BobaItem(
                     new MobEffectInstance(MobEffects.JUMP, 2880, 1,true, false),
                     new MobEffectInstance(MobEffects.ABSORPTION, 2880, 1, true, false),
                     new MobEffectInstance(MobEffects.SATURATION, 2880, 1, true, false)
