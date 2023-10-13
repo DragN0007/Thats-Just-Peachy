@@ -1,6 +1,8 @@
 package com.dragn0007.thatsjustpeachy;
 
 import com.dragn0007.thatsjustpeachy.block.ModBlocks;
+import com.dragn0007.thatsjustpeachy.config.ThatsJustPeachyClientConfig;
+import com.dragn0007.thatsjustpeachy.config.ThatsJustPeachyCommonConfig;
 import com.dragn0007.thatsjustpeachy.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.level.block.Block;
@@ -11,7 +13,9 @@ import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.InterModComms;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
@@ -47,6 +51,10 @@ public class ThatsJustPeachy
         ModItems.register(eventBus);
         //Register ModBlocks
         ModBlocks.register(eventBus);
+
+        //Register Configs
+        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, ThatsJustPeachyClientConfig.SPEC, "thatsjustpeachy-client.toml");
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, ThatsJustPeachyCommonConfig.SPEC, "thatsjustpeachy-common.toml");
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
