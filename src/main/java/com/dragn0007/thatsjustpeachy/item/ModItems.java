@@ -3,11 +3,11 @@ package com.dragn0007.thatsjustpeachy.item;
 
 import com.dragn0007.thatsjustpeachy.ThatsJustPeachy;
 import com.dragn0007.thatsjustpeachy.block.ModBlocks;
+import net.minecraft.advancements.critereon.UsedTotemTrigger;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemNameBlockItem;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -54,6 +54,16 @@ public class ModItems {
                     new MobEffectInstance(MobEffects.DIG_SPEED, 2880, 1, true, false),
                     new MobEffectInstance(MobEffects.SATURATION, 2880, 1, true, false)
             ));
+
+
+    //IMMORTAL PEACH
+    public static final RegistryObject<Item> IMMORTAL_PEACH = ITEMS.register("immortal_peach",
+            () -> new CustomFoodItem(
+                    new MobEffectInstance(MobEffects.REGENERATION, 2880, 1,true, false),
+                    new MobEffectInstance(MobEffects.ABSORPTION, 2880, 1, true, false),
+                    new MobEffectInstance(MobEffects.HEALTH_BOOST, 2880, 1, true, false)
+            ));
+
 
 
     public static final RegistryObject<Item> MODGROUP = ITEMS.register("modgroup",
