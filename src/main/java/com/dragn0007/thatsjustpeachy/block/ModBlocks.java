@@ -1,6 +1,8 @@
 package com.dragn0007.thatsjustpeachy.block;
 
 import com.dragn0007.thatsjustpeachy.ThatsJustPeachy;
+import com.dragn0007.thatsjustpeachy.block.custom.vox.PaperLanternVox;
+import com.dragn0007.thatsjustpeachy.block.custom.vox.PeachLanternVox;
 import com.dragn0007.thatsjustpeachy.item.ModItemGroup;
 import com.dragn0007.thatsjustpeachy.item.ModItems;
 import com.dragn0007.thatsjustpeachy.world.feature.tree.PeachTreeGrower;
@@ -8,6 +10,8 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.MaterialColor;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -16,6 +20,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
+import java.util.function.ToIntFunction;
 
 import static net.minecraft.world.level.block.Blocks.OAK_PLANKS;
 
@@ -28,6 +33,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> PEACH_CAKE = registerBlockWithoutItem("peach_cake",
             () -> new CakeBlock(BlockBehaviour.Properties.of(Material.CAKE).strength(0.5F).sound(SoundType.WOOL)));
 
+    //Decor
+    public static final RegistryObject<PaperLanternVox> PAPER_LANTERN = registerBlock("paper_lantern",
+            () -> new PaperLanternVox());
+    public static final RegistryObject<PeachLanternVox> PEACH_LANTERN = registerBlock("peach_lantern",
+            () -> new PeachLanternVox());
 
     //Tree
     public static final RegistryObject<RotatedPillarBlock> PEACH_LOG = registerBlock("peach_log",
@@ -68,6 +78,7 @@ public class ModBlocks {
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(),
                 new Item.Properties().tab(ModItemGroup.GROUP)));
     }
+
 
 
     public static void register(IEventBus eventBus) {
