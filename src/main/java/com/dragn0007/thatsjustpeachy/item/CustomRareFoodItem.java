@@ -10,12 +10,12 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 
-public class CustomFoodItem extends Item {
+public class CustomRareFoodItem extends Item {
 
     public MobEffectInstance[] effectInstances;
 
-    public CustomFoodItem(MobEffectInstance... effectInstances) {
-        super(new Properties().craftRemainder(Items.GLASS_BOTTLE).tab(ModItemGroup.GROUP));
+    public CustomRareFoodItem(MobEffectInstance... effectInstances) {
+        super(new Properties().craftRemainder(Items.GLASS_BOTTLE).tab(ModItemGroup.GROUP).rarity(Rarity.RARE));
         this.effectInstances = effectInstances;
     }
 

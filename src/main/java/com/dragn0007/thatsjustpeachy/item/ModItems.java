@@ -3,7 +3,6 @@ package com.dragn0007.thatsjustpeachy.item;
 
 import com.dragn0007.thatsjustpeachy.ThatsJustPeachy;
 import com.dragn0007.thatsjustpeachy.block.ModBlocks;
-import net.minecraft.advancements.critereon.UsedTotemTrigger;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
@@ -58,10 +57,13 @@ public class ModItems {
 
     //IMMORTAL PEACH
     public static final RegistryObject<Item> IMMORTAL_PEACH = ITEMS.register("immortal_peach",
-            () -> new CustomFoodItem(
-                    new MobEffectInstance(MobEffects.REGENERATION, 2880, 1,true, false),
-                    new MobEffectInstance(MobEffects.ABSORPTION, 2880, 1, true, false),
-                    new MobEffectInstance(MobEffects.HEALTH_BOOST, 2880, 1, true, false)
+            () -> new CustomRareFoodItem(
+                    new MobEffectInstance(MobEffects.REGENERATION, 6000, 1,true, false),
+                    new MobEffectInstance(MobEffects.ABSORPTION, 6000, 1, true, false),
+                    new MobEffectInstance(MobEffects.HEALTH_BOOST, 6000, 1, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 6000, 1, true, false),
+                    new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 6000, 1, true, false),
+                    new MobEffectInstance(MobEffects.SATURATION, 6000, 1, true, false)
             ));
 
 

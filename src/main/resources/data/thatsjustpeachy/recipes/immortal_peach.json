@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "thatsjustpeachy:peach"
+    },
+    {
+      "item": "minecraft:heart_of_the_sea"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:glow_berries"
+    }
+  ],
+
+  "result": {
+    "item": "thatsjustpeachy:immortal_peach",
+    "count": 1
+  }
+}
