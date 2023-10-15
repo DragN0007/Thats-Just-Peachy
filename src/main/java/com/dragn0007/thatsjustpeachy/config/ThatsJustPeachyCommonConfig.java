@@ -9,10 +9,6 @@ public class ThatsJustPeachyCommonConfig {
     public static final ForgeConfigSpec.ConfigValue<Float> TREE_WEIGHT;
 
 
-
-
-
-
     static {
         BUILDER.push("Configs for That's Just Peachy!");
 

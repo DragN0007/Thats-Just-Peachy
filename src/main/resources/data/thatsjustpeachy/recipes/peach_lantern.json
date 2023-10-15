@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "thatsjustpeachy:peach"
+    },
+    {
+      "item": "minecraft:torch"
+    }
+  ],
+
+  "result": {
+    "item": "thatsjustpeachy:peach_lantern",
+    "count": 1
+  }
+}

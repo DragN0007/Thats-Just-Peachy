@@ -79,8 +79,6 @@ public class ModBlocks {
                 new Item.Properties().tab(ModItemGroup.GROUP)));
     }
 
-
-
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
     }
