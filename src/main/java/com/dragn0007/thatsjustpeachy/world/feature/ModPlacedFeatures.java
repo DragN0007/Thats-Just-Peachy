@@ -26,7 +26,7 @@ public class ModPlacedFeatures {
 
     public static final RegistryObject<PlacedFeature> PEACH_PLACED = PLACED_FEATURES.register("peach_placed",
             () -> new PlacedFeature(ModConfigFeatures.PEACH_SPAWN.getHolder().get(), VegetationPlacements.treePlacement(
-                    PlacementUtils.countExtra(1, 0.1F, 1))));
+                    PlacementUtils.countExtra(0, 0.5F, 1))));
 
 
     public static void register(IEventBus eventBus) {

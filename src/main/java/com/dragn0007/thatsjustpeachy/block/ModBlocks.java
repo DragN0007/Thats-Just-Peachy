@@ -1,6 +1,8 @@
 package com.dragn0007.thatsjustpeachy.block;
 
 import com.dragn0007.thatsjustpeachy.ThatsJustPeachy;
+import com.dragn0007.thatsjustpeachy.block.custom.vox.PaperLanternVox;
+import com.dragn0007.thatsjustpeachy.block.custom.vox.PeachLanternVox;
 import com.dragn0007.thatsjustpeachy.item.ModItemGroup;
 import com.dragn0007.thatsjustpeachy.item.ModItems;
 import com.dragn0007.thatsjustpeachy.world.feature.tree.PeachTreeGrower;
@@ -27,6 +29,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> PEACH_CAKE = registerBlockWithoutItem("peach_cake",
             () -> new CakeBlock(BlockBehaviour.Properties.of(Material.CAKE).strength(0.5F).sound(SoundType.WOOL)));
 
+    //Decor
+    public static final RegistryObject<PaperLanternVox> PAPER_LANTERN = registerBlock("paper_lantern",
+            () -> new PaperLanternVox());
+    public static final RegistryObject<PeachLanternVox> PEACH_LANTERN = registerBlock("peach_lantern",
+            () -> new PeachLanternVox());
 
     //Tree
     public static final RegistryObject<RotatedPillarBlock> PEACH_LOG = registerBlock("peach_log",
