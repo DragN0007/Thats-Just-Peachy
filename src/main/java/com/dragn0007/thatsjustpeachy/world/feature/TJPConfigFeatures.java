@@ -1,11 +1,8 @@
 package com.dragn0007.thatsjustpeachy.world.feature;
 
 import com.dragn0007.thatsjustpeachy.ThatsJustPeachy;
-import com.dragn0007.thatsjustpeachy.block.ModBlocks;
-import net.minecraft.core.Holder;
+import com.dragn0007.thatsjustpeachy.block.TJPBlocks;
 import net.minecraft.core.Registry;
-import net.minecraft.data.worldgen.features.FeatureUtils;
-import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
@@ -16,16 +13,13 @@ import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSi
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
-import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.List;
 
-import static com.dragn0007.thatsjustpeachy.world.feature.ModPlacedFeatures.PEACH_CHECKED;
-
-public class ModConfigFeatures {
+public class TJPConfigFeatures {
     public static final DeferredRegister<ConfiguredFeature<?, ?>> CONFIGURED_FEATURES =
             DeferredRegister.create(Registry.CONFIGURED_FEATURE_REGISTRY, ThatsJustPeachy.MODID);
 
@@ -33,17 +27,17 @@ public class ModConfigFeatures {
     public static final RegistryObject<ConfiguredFeature<?, ?>> PEACH =
             CONFIGURED_FEATURES.register("peach", () ->
                     new ConfiguredFeature<>(Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                            BlockStateProvider.simple(ModBlocks.PEACH_LOG.get()),
+                            BlockStateProvider.simple(TJPBlocks.PEACH_LOG.get()),
                             new StraightTrunkPlacer(2, 2, 0),
-                            BlockStateProvider.simple(ModBlocks.PEACH_LEAVES.get()),
+                            BlockStateProvider.simple(TJPBlocks.PEACH_LEAVES.get()),
                             new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 1),
                             new TwoLayersFeatureSize(1, 0, 2)).build()));
 
     public static final RegistryObject<ConfiguredFeature<?, ?>> PEACH_SPAWN =
             CONFIGURED_FEATURES.register("peach_spawn", () -> new ConfiguredFeature<>(Feature.RANDOM_SELECTOR,
                     new RandomFeatureConfiguration(List.of(new WeightedPlacedFeature(
-                            ModPlacedFeatures.PEACH_CHECKED.getHolder().get(),
-                            0.5F)), ModPlacedFeatures.PEACH_CHECKED.getHolder().get())));
+                            TJPPlacedFeatures.PEACH_CHECKED.getHolder().get(),
+                            0.5F)), TJPPlacedFeatures.PEACH_CHECKED.getHolder().get())));
 
 
     public static void register(IEventBus eventBus) {

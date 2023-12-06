@@ -15,7 +15,7 @@ public class CustomRareFoodItem extends Item {
     public MobEffectInstance[] effectInstances;
 
     public CustomRareFoodItem(MobEffectInstance... effectInstances) {
-        super(new Properties().craftRemainder(Items.GLASS_BOTTLE).tab(ModItemGroup.GROUP).rarity(Rarity.RARE));
+        super(new Properties().craftRemainder(Items.GLASS_BOTTLE).tab(TJPItemGroup.GROUP).rarity(Rarity.RARE));
         this.effectInstances = effectInstances;
     }
 

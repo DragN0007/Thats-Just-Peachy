@@ -1,10 +1,11 @@
 package com.dragn0007.thatsjustpeachy.block;
 
 import com.dragn0007.thatsjustpeachy.ThatsJustPeachy;
+import com.dragn0007.thatsjustpeachy.block.custom.PeachLeaves;
 import com.dragn0007.thatsjustpeachy.block.custom.vox.PaperLanternVox;
 import com.dragn0007.thatsjustpeachy.block.custom.vox.PeachLanternVox;
-import com.dragn0007.thatsjustpeachy.item.ModItemGroup;
-import com.dragn0007.thatsjustpeachy.item.ModItems;
+import com.dragn0007.thatsjustpeachy.item.TJPItemGroup;
+import com.dragn0007.thatsjustpeachy.item.TJPItems;
 import com.dragn0007.thatsjustpeachy.world.feature.tree.PeachTreeGrower;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -20,7 +21,7 @@ import java.util.function.Supplier;
 
 import static net.minecraft.world.level.block.Blocks.OAK_PLANKS;
 
-public class ModBlocks {
+public class TJPBlocks {
     public static final DeferredRegister<Block> BLOCKS
             = DeferredRegister.create(ForgeRegistries.BLOCKS, ThatsJustPeachy.MODID);
 
@@ -43,8 +44,8 @@ public class ModBlocks {
             () -> new Block(Block.Properties.of(Material.WOOD)
                     .strength(2.0F, 3.0F)));
     public static final RegistryObject<Block> PEACH_LEAVES = registerBlock("peach_leaves",
-            () -> new LeavesBlock(Block.Properties.of(Material.LEAVES).strength(0.2F).randomTicks().sound(SoundType.GRASS).noOcclusion()));
-    public static final RegistryObject<Block> PEACH_SAPLING = registerBlock("peach_sapling",
+            () -> new PeachLeaves(Block.Properties.of(Material.LEAVES).strength(0.2F).randomTicks().sound(SoundType.GRASS).noOcclusion()));
+    public static final RegistryObject<Block> PEACH_SAPLING = registerBlockWithoutItem("peach_sapling",
             () -> new SaplingBlock(new PeachTreeGrower(), Block.Properties.of(Material.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.GRASS)));
     public static final RegistryObject<Block> PEACH_STAIRS = registerBlock("peach_stairs",
             () -> new StairBlock(PEACH_PLANKS.get().defaultBlockState(), Block.Properties.copy(OAK_PLANKS)));
@@ -64,15 +65,14 @@ public class ModBlocks {
     private static <T extends Block>RegistryObject<T> registerBlockWithoutItem(String name, Supplier<T> block){
         return BLOCKS.register(name, block);
     }
-
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
         return toReturn;
     }
     private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block) {
-        ModItems.ITEMS.register(name, () -> new BlockItem(block.get(),
-                new Item.Properties().tab(ModItemGroup.GROUP)));
+        TJPItems.ITEMS.register(name, () -> new BlockItem(block.get(),
+                new Item.Properties().tab(TJPItemGroup.GROUP)));
     }
 
 

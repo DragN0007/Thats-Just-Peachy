@@ -3,7 +3,7 @@ loaderVersion="[43,)" #mandatory This is typically bumped every Minecraft versio
 license="MIT"
 [[mods]]
 modId="thatsjustpeachy"
-version="${1.19.2-1.1}"
+version="${1.19.2-1.2}"
 displayName="That's Just Peachy!"
 logoFile="tjp.png" #optional
 credits="" #optional
