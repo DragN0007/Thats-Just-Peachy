@@ -1,7 +1,7 @@
 package com.dragn0007.thatsjustpeachy.world.gen;
 
 
-import com.dragn0007.thatsjustpeachy.world.feature.ModPlacedFeatures;
+import com.dragn0007.thatsjustpeachy.world.feature.TJPPlacedFeatures;
 import net.minecraft.core.Holder;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.biome.Biome;
@@ -14,7 +14,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import java.util.List;
 import java.util.Set;
 
-public class ModTreeGeneration {
+public class TJPTreeGeneration {
 
     public static void generateTrees(final BiomeLoadingEvent event) {
         ResourceKey<Biome> key = ResourceKey.create(ForgeRegistries.Keys.BIOMES, event.getName());
@@ -24,7 +24,7 @@ public class ModTreeGeneration {
             List<Holder<PlacedFeature>> base =
                     event.getGeneration().getFeatures(GenerationStep.Decoration.VEGETAL_DECORATION);
 
-            base.add(ModPlacedFeatures.PEACH_PLACED);
+            base.add(TJPPlacedFeatures.PEACH_PLACED);
         }
 
 

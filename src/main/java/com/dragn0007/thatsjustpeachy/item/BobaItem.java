@@ -16,7 +16,7 @@ public class BobaItem extends Item {
     public MobEffectInstance[] effectInstances;
 
     public BobaItem(MobEffectInstance... effectInstances) {
-        super(new Properties().craftRemainder(Items.GLASS_BOTTLE).food(new FoodProperties.Builder().nutrition(6).saturationMod(1).build()).tab(ModItemGroup.GROUP));
+        super(new Properties().craftRemainder(Items.GLASS_BOTTLE).food(new FoodProperties.Builder().nutrition(6).saturationMod(1).build()).tab(TJPItemGroup.GROUP));
         this.effectInstances = effectInstances;
     }
 

@@ -1,9 +1,9 @@
 package com.dragn0007.thatsjustpeachy;
 
-import com.dragn0007.thatsjustpeachy.block.ModBlocks;
+import com.dragn0007.thatsjustpeachy.block.TJPBlocks;
 import com.dragn0007.thatsjustpeachy.config.ThatsJustPeachyClientConfig;
 import com.dragn0007.thatsjustpeachy.config.ThatsJustPeachyCommonConfig;
-import com.dragn0007.thatsjustpeachy.item.ModItems;
+import com.dragn0007.thatsjustpeachy.item.TJPItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -30,7 +30,6 @@ import static com.dragn0007.thatsjustpeachy.ThatsJustPeachy.MODID;
 @Mod(MODID)
 public class ThatsJustPeachy
 {
-    // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
     public static final String MODID = "thatsjustpeachy";
 
@@ -48,9 +47,9 @@ public class ThatsJustPeachy
         eventBus.addListener(this::setup);
 
         // Register ModItems
-        ModItems.register(eventBus);
+        TJPItems.register(eventBus);
         //Register ModBlocks
-        ModBlocks.register(eventBus);
+        TJPBlocks.register(eventBus);
 
         //Register Configs
         ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, ThatsJustPeachyClientConfig.SPEC, "thatsjustpeachy-client.toml");

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "thatsjustpeachy:peach"
+    }
+  ],
+  "result": {
+    "item": "thatsjustpeachy:peach_pit",
+    "count": 1
+  }
+}

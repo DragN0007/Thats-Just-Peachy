@@ -1,6 +1,6 @@
 package com.dragn0007.thatsjustpeachy.world.feature.tree;
 
-import com.dragn0007.thatsjustpeachy.world.feature.ModConfigFeatures;
+import com.dragn0007.thatsjustpeachy.world.feature.TJPConfigFeatures;
 import net.minecraft.core.Holder;
 import net.minecraft.world.level.block.grower.AbstractTreeGrower;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
@@ -12,6 +12,6 @@ public class PeachTreeGrower extends AbstractTreeGrower {
     @Nullable
     @Override
     protected Holder<? extends ConfiguredFeature<?, ?>> getConfiguredFeature(Random p_204307_, boolean p_204308_) {
-        return ModConfigFeatures.PEACH;
+        return TJPConfigFeatures.PEACH;
     }
 }

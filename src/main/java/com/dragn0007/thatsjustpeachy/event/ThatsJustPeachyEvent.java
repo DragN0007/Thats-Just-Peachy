@@ -1,13 +1,9 @@
 package com.dragn0007.thatsjustpeachy.event;
 
 import com.dragn0007.thatsjustpeachy.ThatsJustPeachy;
-import com.dragn0007.thatsjustpeachy.block.ModBlocks;
+import com.dragn0007.thatsjustpeachy.block.TJPBlocks;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.entity.EntityRenderers;
-import net.minecraft.world.entity.SpawnPlacements;
-import net.minecraft.world.level.levelgen.Heightmap;
-import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -19,11 +15,11 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
     @SubscribeEvent
     public static void clientSetupEvent(FMLClientSetupEvent event) {
 
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.PEACH_DOOR.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.PEACH_TRAPDOOR.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.PEACH_LEAVES.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.PEACH_SAPLING.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.PAPER_LANTERN.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(TJPBlocks.PEACH_DOOR.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(TJPBlocks.PEACH_TRAPDOOR.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(TJPBlocks.PEACH_LEAVES.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(TJPBlocks.PEACH_SAPLING.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(TJPBlocks.PAPER_LANTERN.get(), RenderType.cutout());
 
     }
 }
