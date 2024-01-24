@@ -52,7 +52,6 @@ public class ThatsJustPeachy
         TJPBlocks.register(eventBus);
 
         //Register Configs
-        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, ThatsJustPeachyClientConfig.SPEC, "thatsjustpeachy-client.toml");
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, ThatsJustPeachyCommonConfig.SPEC, "thatsjustpeachy-common.toml");
 
         // Register ourselves for server and other game events we are interested in
