@@ -61,8 +61,8 @@ public class ThatsJustPeachy
 
     private void setup(final FMLCommonSetupEvent event)
     {
-        ComposterBlock.COMPOSTABLES.put(TJPItems.PEACH_PIT.get(), 0.3F);
-        ComposterBlock.COMPOSTABLES.put(TJPItems.PEACH.get(), 0.5F);
+        ComposterBlock.COMPOSTABLES.put(TJPItems.PEACH_PIT.get(), 0.5F);
+        ComposterBlock.COMPOSTABLES.put(TJPItems.PEACH.get(), 0.7F);
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event)

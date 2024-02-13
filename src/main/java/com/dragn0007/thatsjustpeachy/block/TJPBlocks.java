@@ -45,7 +45,7 @@ public class TJPBlocks {
                     .strength(2.0F, 3.0F)));
     public static final RegistryObject<Block> PEACH_LEAVES = registerBlock("peach_leaves",
             () -> new PeachLeaves(Block.Properties.of(Material.LEAVES).strength(0.2F).randomTicks().sound(SoundType.GRASS).noOcclusion()));
-    public static final RegistryObject<Block> PEACH_SAPLING = registerBlock("peach_sapling",
+    public static final RegistryObject<Block> PEACH_SAPLING = registerBlockWithoutItem("peach_sapling",
             () -> new SaplingBlock(new PeachTreeGrower(), Block.Properties.of(Material.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.GRASS)));
     public static final RegistryObject<Block> PEACH_STAIRS = registerBlock("peach_stairs",
             () -> new StairBlock(PEACH_PLANKS.get().defaultBlockState(), Block.Properties.copy(OAK_PLANKS)));
