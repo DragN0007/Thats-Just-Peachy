@@ -7,6 +7,7 @@ import com.dragn0007.thatsjustpeachy.item.TJPItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -51,18 +52,17 @@ public class ThatsJustPeachy
         //Register ModBlocks
         TJPBlocks.register(eventBus);
 
-        //Register Configs
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, ThatsJustPeachyCommonConfig.SPEC, "thatsjustpeachy-common.toml");
-
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+        //Register Configs
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, ThatsJustPeachyCommonConfig.SPEC, "thatsjustpeachy-common.toml");
     }
 
     private void setup(final FMLCommonSetupEvent event)
     {
-        // some preinit code
-        LOGGER.info("HELLO FROM PREINIT");
-        LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+        ComposterBlock.COMPOSTABLES.put(TJPItems.PEACH_PIT.get(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(TJPItems.PEACH.get(), 0.5F);
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event)
