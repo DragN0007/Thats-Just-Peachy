@@ -73,7 +73,6 @@ public class ThatsJustPeachy
 
     private void processIMC(final InterModProcessEvent event)
     {
-        // Some dragn0007 code to receive and process InterModComms from other mods
         LOGGER.info("Got IMC {}", event.getIMCStream().
                 map(m->m.messageSupplier().get()).
                 collect(Collectors.toList()));
@@ -83,8 +82,6 @@ public class ThatsJustPeachy
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event)
     {
-        // Do something when the server starts
-        LOGGER.info("HELLO from server starting");
     }
 
     // You can use EventBusSubscriber to automatically subscribe events on the contained class (this is subscribing to the MOD
@@ -95,8 +92,6 @@ public class ThatsJustPeachy
         @SubscribeEvent
         public static void onBlocksRegistry(final RegistryEvent.Register<Block> blockRegistryEvent)
         {
-            // Register a new block here
-            LOGGER.info("HELLO from Register Block");
         }
     }
 }
