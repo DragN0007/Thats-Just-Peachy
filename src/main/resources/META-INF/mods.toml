@@ -4,7 +4,7 @@ loaderVersion="[40,)"
 license="MIT"
 [[mods]]
 modId="thatsjustpeachy"
-version="${1.18.2-1.2}" #mandatory
+version="${1.18.2-1.3}" #mandatory
 displayName="That's Just Peachy!" #mandatory
 logoFile="tjp.png" #optional
 credits=""
