@@ -12,6 +12,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.MaterialColor;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -38,14 +39,13 @@ public class TJPBlocks {
 
     //Tree
     public static final RegistryObject<RotatedPillarBlock> PEACH_LOG = registerBlock("peach_log",
-            () -> new RotatedPillarBlock(Block.Properties.of(Material.WOOD)
-                    .strength(2.0F, 3.0F)));
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.WOOD).strength(2.0F).sound(SoundType.WOOD)));
     public static final RegistryObject<Block> PEACH_PLANKS = registerBlock("peach_planks",
             () -> new Block(Block.Properties.of(Material.WOOD)
                     .strength(2.0F, 3.0F)));
     public static final RegistryObject<Block> PEACH_LEAVES = registerBlock("peach_leaves",
             () -> new PeachLeaves(Block.Properties.of(Material.LEAVES).strength(0.2F).randomTicks().sound(SoundType.GRASS).noOcclusion()));
-    public static final RegistryObject<Block> PEACH_SAPLING = registerBlockWithoutItem("peach_sapling",
+    public static final RegistryObject<Block> PEACH_SAPLING = registerBlock("peach_sapling",
             () -> new SaplingBlock(new PeachTreeGrower(), Block.Properties.of(Material.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.GRASS)));
     public static final RegistryObject<Block> PEACH_STAIRS = registerBlock("peach_stairs",
             () -> new StairBlock(PEACH_PLANKS.get().defaultBlockState(), Block.Properties.copy(OAK_PLANKS)));
