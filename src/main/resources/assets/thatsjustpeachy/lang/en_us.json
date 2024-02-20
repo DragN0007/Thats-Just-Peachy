@@ -25,6 +25,10 @@
   "block.thatsjustpeachy.peach_trapdoor": "Peach Trapdoor",
   "block.thatsjustpeachy.peach_fence": "Peach Fence",
   "block.thatsjustpeachy.peach_fence_gate": "Peach Fence Gate",
+  "block.thatsjustpeachy.peach_wall": "Peach Planks Wall",
+  "block.thatsjustpeachy.peach_wall_liner": "Peach Planks Wall Liner",
+  "block.thatsjustpeachy.stripped_peach_log": "Stripped Peach Log",
+
   "item.thatsjustpeachy.peach_pit": "Peach Pit",
 
   "itemGroup.PeachModTab": "That's Just Peachy!"

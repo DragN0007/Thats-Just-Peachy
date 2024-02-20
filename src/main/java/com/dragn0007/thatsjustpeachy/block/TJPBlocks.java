@@ -2,11 +2,13 @@ package com.dragn0007.thatsjustpeachy.block;
 
 import com.dragn0007.thatsjustpeachy.ThatsJustPeachy;
 import com.dragn0007.thatsjustpeachy.block.custom.PeachLeaves;
+import com.dragn0007.thatsjustpeachy.block.custom.TJPStrippableLog;
 import com.dragn0007.thatsjustpeachy.block.custom.vox.PaperLanternVox;
 import com.dragn0007.thatsjustpeachy.block.custom.vox.PeachLanternVox;
 import com.dragn0007.thatsjustpeachy.item.TJPItemGroup;
 import com.dragn0007.thatsjustpeachy.item.TJPItems;
 import com.dragn0007.thatsjustpeachy.world.feature.tree.PeachTreeGrower;
+import net.minecraft.core.Direction;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
@@ -38,14 +40,18 @@ public class TJPBlocks {
             () -> new PeachLanternVox());
 
     //Tree
-    public static final RegistryObject<RotatedPillarBlock> PEACH_LOG = registerBlock("peach_log",
-            () -> new RotatedPillarBlock(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.WOOD).strength(2.0F).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> PEACH_LOG = registerBlock("peach_log",
+            () -> log(MaterialColor.NONE, MaterialColor.NONE));
+    public static final RegistryObject<Block> STRIPPED_PEACH_LOG = registerBlock("stripped_peach_log",
+            () -> log(MaterialColor.NONE, MaterialColor.NONE));
     public static final RegistryObject<Block> PEACH_PLANKS = registerBlock("peach_planks",
             () -> new Block(Block.Properties.of(Material.WOOD)
                     .strength(2.0F, 3.0F)));
+    public static final RegistryObject<Block> PEACH_WALL = registerBlock("peach_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(PEACH_PLANKS.get())));
     public static final RegistryObject<Block> PEACH_LEAVES = registerBlock("peach_leaves",
             () -> new PeachLeaves(Block.Properties.of(Material.LEAVES).strength(0.2F).randomTicks().sound(SoundType.GRASS).noOcclusion()));
-    public static final RegistryObject<Block> PEACH_SAPLING = registerBlock("peach_sapling",
+    public static final RegistryObject<Block> PEACH_SAPLING = registerBlockWithoutItem("peach_sapling",
             () -> new SaplingBlock(new PeachTreeGrower(), Block.Properties.of(Material.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.GRASS)));
     public static final RegistryObject<Block> PEACH_STAIRS = registerBlock("peach_stairs",
             () -> new StairBlock(PEACH_PLANKS.get().defaultBlockState(), Block.Properties.copy(OAK_PLANKS)));
@@ -60,6 +66,8 @@ public class TJPBlocks {
             () -> new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD) .strength(2.0F, 3.0F).sound(SoundType.WOOD)));
     public static final RegistryObject<Block> PEACH_FENCE_GATE = registerBlock("peach_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> PEACH_WALL_LINER = registerBlock("peach_wall_liner",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
 
 
     private static <T extends Block>RegistryObject<T> registerBlockWithoutItem(String name, Supplier<T> block){
@@ -74,6 +82,12 @@ public class TJPBlocks {
     private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block) {
         TJPItems.ITEMS.register(name, () -> new BlockItem(block.get(),
                 new Item.Properties().tab(TJPItemGroup.GROUP)));
+    }
+
+    private static TJPStrippableLog log(MaterialColor p_50789_, MaterialColor p_50790_) {
+        return new TJPStrippableLog(BlockBehaviour.Properties.of(Material.WOOD, (p_152624_) -> {
+            return p_152624_.getValue(RotatedPillarBlock.AXIS) == Direction.Axis.Y ? p_50789_ : p_50790_;
+        }).strength(2.0F).sound(SoundType.WOOD));
     }
 
     public static void register(IEventBus eventBus) {
