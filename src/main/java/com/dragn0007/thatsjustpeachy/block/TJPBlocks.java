@@ -40,6 +40,9 @@ public class TJPBlocks {
     public static final RegistryObject<RotatedPillarBlock> PEACH_LOG = registerBlock("peach_log",
             () -> new RotatedPillarBlock(Block.Properties.of(Material.WOOD)
                     .strength(2.0F, 3.0F)));
+    public static final RegistryObject<RotatedPillarBlock> STRIPPED_PEACH_LOG = registerBlock("stripped_peach_log",
+            () -> new RotatedPillarBlock(Block.Properties.of(Material.WOOD)
+                    .strength(2.0F, 3.0F)));
     public static final RegistryObject<Block> PEACH_PLANKS = registerBlock("peach_planks",
             () -> new Block(Block.Properties.of(Material.WOOD)
                     .strength(2.0F, 3.0F)));
@@ -60,6 +63,10 @@ public class TJPBlocks {
             () -> new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD) .strength(2.0F, 3.0F).sound(SoundType.WOOD)));
     public static final RegistryObject<Block> PEACH_FENCE_GATE = registerBlock("peach_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> PEACH_WALL_LINER = registerBlock("peach_wall_liner",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static final RegistryObject<Block> PEACH_WALL = registerBlock("peach_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(PEACH_PLANKS.get())));
 
 
     private static <T extends Block>RegistryObject<T> registerBlockWithoutItem(String name, Supplier<T> block){
