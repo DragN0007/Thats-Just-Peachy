@@ -1,0 +1,35 @@
+{
+  "itemGroup.peachmodtab": "桃花源记",
+
+  "item.thatsjustpeachy.peach": "桃子",
+  "item.thatsjustpeachy.peach_cake": "桃子蛋糕",
+  "item.thatsjustpeachy.peach_pie": "桃子派",
+  "item.thatsjustpeachy.peach_tea": "桃子茶",
+  "item.thatsjustpeachy.peach_boba": "桃子奶茶",
+  "item.thatsjustpeachy.peach_juice": "桃子汁",
+  "item.thatsjustpeachy.peach_jam": "桃子果酱",
+  "item.thatsjustpeachy.peach_toast": "果酱面包片",
+  "item.thatsjustpeachy.peach_icecream": "桃子冰淇淋",
+
+  "item.thatsjustpeachy.immortal_peach": "生命桃子",
+
+  "block.thatsjustpeachy.peach_lantern": "桃子灯笼",
+  "block.thatsjustpeachy.paper_lantern": "纸灯笼",
+
+  "block.thatsjustpeachy.peach_cake": "桃子蛋糕",
+  "block.thatsjustpeachy.peach_leaves": "桃树树叶",
+  "block.thatsjustpeachy.peach_log": "桃木原木",
+  "block.thatsjustpeachy.peach_planks": "桃木木板",
+  "block.thatsjustpeachy.peach_slab": "桃木台阶",
+  "block.thatsjustpeachy.peach_stairs": "桃木楼梯",
+  "block.thatsjustpeachy.peach_sapling": "桃树树苗",
+  "block.thatsjustpeachy.peach_door": "桃木门",
+  "block.thatsjustpeachy.peach_trapdoor": "桃木活板门",
+  "block.thatsjustpeachy.peach_fence": "桃木栅栏",
+  "block.thatsjustpeachy.peach_fence_gate": "桃木栅栏门",
+  "block.thatsjustpeachy.peach_wall": "桃木墙",
+  "block.thatsjustpeachy.peach_wall_liner": "桃木木板墙衬",
+  "block.thatsjustpeachy.stripped_peach_log": "去皮桃木原木",
+
+  "item.thatsjustpeachy.peach_pit": "桃核"
+}
