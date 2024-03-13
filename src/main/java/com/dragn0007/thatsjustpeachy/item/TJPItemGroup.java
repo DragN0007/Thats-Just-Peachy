@@ -6,7 +6,7 @@ import net.minecraft.world.item.ItemStack;
 
 public class TJPItemGroup {
 
-    public static final CreativeModeTab GROUP = new CreativeModeTab("PeachModTab")
+    public static final CreativeModeTab GROUP = new CreativeModeTab("peachmodtab")
     {
         @Override
         public ItemStack makeIcon() {

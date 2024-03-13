@@ -35,6 +35,10 @@ public class TJPItems {
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(8).saturationMod(1).build()).tab(TJPItemGroup.GROUP)));
     public static final RegistryObject<Item> PEACH_PIT = ITEMS.register("peach_pit",
             () -> new ItemNameBlockItem(TJPBlocks.PEACH_SAPLING.get(), (new Item.Properties().tab(TJPItemGroup.GROUP))));
+    public static final RegistryObject<Item> PEACH_SODA = ITEMS.register("peach_soda",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationMod(1).effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 600, 0), 0.8F).build()).tab(TJPItemGroup.GROUP)));
+    public static final RegistryObject<Item> PEACH_PASTRY = ITEMS.register("peach_pastry",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(7).saturationMod(1).effect(new MobEffectInstance(MobEffects.DIG_SPEED, 600, 0), 0.8F).build()).tab(TJPItemGroup.GROUP)));
 
 
     //Drinks

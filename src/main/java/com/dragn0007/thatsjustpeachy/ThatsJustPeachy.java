@@ -1,6 +1,7 @@
 package com.dragn0007.thatsjustpeachy;
 
 import com.dragn0007.thatsjustpeachy.block.TJPBlocks;
+import com.dragn0007.thatsjustpeachy.block.TJPBlocksLootGen;
 import com.dragn0007.thatsjustpeachy.item.TJPItems;
 import com.dragn0007.thatsjustpeachy.world.feature.TJPConfigFeatures;
 import com.dragn0007.thatsjustpeachy.world.feature.TJPPlacedFeatures;
@@ -38,6 +39,7 @@ public class ThatsJustPeachy
         TJPItems.register(modEventBus);
         //Register ModBlocks
         TJPBlocks.register(modEventBus);
+        TJPBlocksLootGen.register(modEventBus);
         //Register Configured Features
         TJPConfigFeatures.register(modEventBus);
         //Register Placed Features
