@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_rh",
+  "textures": {
+    "bottom": "thatsjustpeachy:block/warped_peach_door_bottom",
+    "top": "thatsjustpeachy:block/warped_peach_door_top"
+  }
+}

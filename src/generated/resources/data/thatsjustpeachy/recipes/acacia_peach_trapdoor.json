@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " A ",
+    "BBB",
+    "BBB"
+  ],
+  "key": {
+    "A": {
+      "item": "thatsjustpeachy:peach"
+    },
+    "B": {
+      "item": "minecraft:acacia_planks"
+    }
+  },
+  "result": {
+    "item": "thatsjustpeachy:acacia_peach_trapdoor",
+    "count": 2
+  }
+}

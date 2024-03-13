@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "thatsjustpeachy:peach_soda"
+    ]
+  },
+  "criteria": {
+    "has_peach": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thatsjustpeachy:peach"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "thatsjustpeachy:peach_soda"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_peach",
+      "has_the_recipe"
+    ]
+  ]
+}

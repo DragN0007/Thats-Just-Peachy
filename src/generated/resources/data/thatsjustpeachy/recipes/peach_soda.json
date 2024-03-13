@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BAB",
+    "BAB"
+  ],
+  "key": {
+    "A": {
+      "item": "thatsjustpeachy:peach"
+    },
+    "B": {
+      "item": "minecraft:sugar"
+    }
+  },
+  "result": {
+    "item": "thatsjustpeachy:peach_soda",
+    "count": 2
+  }
+}

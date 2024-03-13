@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom",
+  "textures": {
+    "bottom": "thatsjustpeachy:block/dark_oak_peach_door_bottom",
+    "top": "thatsjustpeachy:block/dark_oak_peach_door_top"
+  }
+}
