@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "thatsjustpeachy:peach"
+    },
+    "B": {
+      "item": "minecraft:jungle_planks"
+    }
+  },
+  "pattern": [
+    " A ",
+    "BBB",
+    "BBB"
+  ],
+  "result": {
+    "count": 2,
+    "item": "thatsjustpeachy:jungle_peach_trapdoor"
+  }
+}
