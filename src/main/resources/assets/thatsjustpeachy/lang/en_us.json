@@ -1,4 +1,6 @@
 {
+  "itemGroup.peachmodtab": "That's Just Peachy!",
+
   "item.thatsjustpeachy.peach": "Peach",
   "item.thatsjustpeachy.peach_cake": "Peach Cake",
   "item.thatsjustpeachy.peach_pie": "Peach Pie",
@@ -8,6 +10,8 @@
   "item.thatsjustpeachy.peach_jam": "Peach Jam",
   "item.thatsjustpeachy.peach_toast": "Peach Jam & Toast",
   "item.thatsjustpeachy.peach_icecream": "Peaches & Ice Cream",
+  "item.thatsjustpeachy.peach_pastry": "Peach Pastry",
+  "item.thatsjustpeachy.peach_soda": "Peach Soda",
 
   "item.thatsjustpeachy.immortal_peach": "Peach of Life",
 
@@ -29,7 +33,22 @@
   "block.thatsjustpeachy.peach_wall_liner": "Peach Planks Wall Liner",
   "block.thatsjustpeachy.stripped_peach_log": "Stripped Peach Log",
 
-  "item.thatsjustpeachy.peach_pit": "Peach Pit",
+  "block.thatsjustpeachy.acacia_peach_door": "Acacia Peach Door",
+  "block.thatsjustpeachy.acacia_peach_trapdoor": "Acacia Peach Trapdoor",
+  "block.thatsjustpeachy.birch_peach_door": "Birch Peach Door",
+  "block.thatsjustpeachy.birch_peach_trapdoor": "Birch Peach Trapdoor",
+  "block.thatsjustpeachy.oak_peach_door": "Oak Peach Door",
+  "block.thatsjustpeachy.oak_peach_trapdoor": "Oak Peach Trapdoor",
+  "block.thatsjustpeachy.spruce_peach_door": "Spruce Peach Door",
+  "block.thatsjustpeachy.spruce_peach_trapdoor": "Spruce Peach Trapdoor",
+  "block.thatsjustpeachy.dark_oak_peach_door": "Dark Oak Peach Door",
+  "block.thatsjustpeachy.dark_oak_peach_trapdoor": "Dark Oak Peach Trapdoor",
+  "block.thatsjustpeachy.jungle_peach_door": "Jungle Peach Door",
+  "block.thatsjustpeachy.jungle_peach_trapdoor": "Jungle Peach Trapdoor",
+  "block.thatsjustpeachy.warped_peach_door": "Warped Peach Door",
+  "block.thatsjustpeachy.warped_peach_trapdoor": "Warped Peach Trapdoor",
+  "block.thatsjustpeachy.crimson_peach_door": "Crimson Peach Door",
+  "block.thatsjustpeachy.crimson_peach_trapdoor": "Crimson Peach Trapdoor",
 
-  "itemGroup.PeachModTab": "That's Just Peachy!"
+  "item.thatsjustpeachy.peach_pit": "Peach Pit"
 }

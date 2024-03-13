@@ -1,6 +1,8 @@
 {
   "itemGroup.peachmodtab": "桃花源记",
 
+  "Chinese translation by junshengxie": "Thank You!",
+
   "item.thatsjustpeachy.peach": "桃子",
   "item.thatsjustpeachy.peach_cake": "桃子蛋糕",
   "item.thatsjustpeachy.peach_pie": "桃子派",
@@ -31,5 +33,29 @@
   "block.thatsjustpeachy.peach_wall_liner": "桃木木板墙衬",
   "block.thatsjustpeachy.stripped_peach_log": "去皮桃木原木",
 
-  "item.thatsjustpeachy.peach_pit": "桃核"
+  "item.thatsjustpeachy.peach_pit": "桃核",
+
+
+
+  "unoffical.unfinished.translations": "Will be fixed later!",
+
+  "block.thatsjustpeachy.acacia_peach_door": "Acacia 桃木门",
+  "block.thatsjustpeachy.acacia_peach_trapdoor": "Acacia 桃木活板门",
+  "block.thatsjustpeachy.birch_peach_door": "Birch 桃木门",
+  "block.thatsjustpeachy.birch_peach_trapdoor": "Birch 桃木活板门",
+  "block.thatsjustpeachy.oak_peach_door": "Oak 桃木门",
+  "block.thatsjustpeachy.oak_peach_trapdoor": "Oak 桃木活板门",
+  "block.thatsjustpeachy.spruce_peach_door": "Spruce 桃木门",
+  "block.thatsjustpeachy.spruce_peach_trapdoor": "Spruce 桃木活板门",
+  "block.thatsjustpeachy.dark_oak_peach_door": "Dark Oak 桃木门",
+  "block.thatsjustpeachy.dark_oak_peach_trapdoor": "Dark Oak 桃木活板门",
+  "block.thatsjustpeachy.jungle_peach_door": "Jungle 桃木门",
+  "block.thatsjustpeachy.jungle_peach_trapdoor": "Jungle 桃木活板门",
+  "block.thatsjustpeachy.warped_peach_door": "Warped 桃木门",
+  "block.thatsjustpeachy.warped_peach_trapdoor": "Warped 桃木活板门",
+  "block.thatsjustpeachy.crimson_peach_door": "Crimson 桃木门",
+  "block.thatsjustpeachy.crimson_peach_trapdoor": "Crimson 桃木活板门",
+
+  "item.thatsjustpeachy.peach_pastry": "Peach Pastry",
+  "item.thatsjustpeachy.peach_soda": "Peach Soda"
 }

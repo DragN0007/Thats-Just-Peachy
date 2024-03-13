@@ -1,12 +1,11 @@
 package com.dragn0007.thatsjustpeachy;
 
 import com.dragn0007.thatsjustpeachy.block.TJPBlocks;
-import com.dragn0007.thatsjustpeachy.config.ThatsJustPeachyClientConfig;
+import com.dragn0007.thatsjustpeachy.block.TJPBlocksLootGen;
 import com.dragn0007.thatsjustpeachy.config.ThatsJustPeachyCommonConfig;
 import com.dragn0007.thatsjustpeachy.item.TJPItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
@@ -51,6 +50,7 @@ public class ThatsJustPeachy
         TJPItems.register(eventBus);
         //Register ModBlocks
         TJPBlocks.register(eventBus);
+        TJPBlocksLootGen.register(eventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

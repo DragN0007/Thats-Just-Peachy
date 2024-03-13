@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "thatsjustpeachy:item/jungle_peach_door"
+  }
+}
