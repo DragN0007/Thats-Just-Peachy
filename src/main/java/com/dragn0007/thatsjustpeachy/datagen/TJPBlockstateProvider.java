@@ -40,6 +40,11 @@ public class TJPBlockstateProvider extends BlockStateProvider {
         doorBlockWithRenderType((DoorBlock) TJPBlocksLootGen.CRIMSON_PEACH_DOOR.get(), new ResourceLocation(ThatsJustPeachy.MODID, "block/crimson_peach_door_bottom"),
                 new ResourceLocation(ThatsJustPeachy.MODID, "block/crimson_peach_door_top"), "cutout");
 
+        doorBlockWithRenderType((DoorBlock) TJPBlocksLootGen.MANGROVE_PEACH_DOOR.get(), new ResourceLocation(ThatsJustPeachy.MODID, "block/mangrove_peach_door_bottom"),
+                new ResourceLocation(ThatsJustPeachy.MODID, "block/mangrove_peach_door_top"), "cutout");
+
+
+
         trapdoorBlockWithRenderType((TrapDoorBlock) TJPBlocksLootGen.ACACIA_PEACH_TRAPDOOR.get(), blockTexture(TJPBlocksLootGen.ACACIA_PEACH_TRAPDOOR.get()), true, "cutout");
         trapdoorBlockWithRenderType((TrapDoorBlock) TJPBlocksLootGen.BIRCH_PEACH_TRAPDOOR.get(), blockTexture(TJPBlocksLootGen.BIRCH_PEACH_TRAPDOOR.get()), true, "cutout");
         trapdoorBlockWithRenderType((TrapDoorBlock) TJPBlocksLootGen.DARK_OAK_PEACH_TRAPDOOR.get(), blockTexture(TJPBlocksLootGen.DARK_OAK_PEACH_TRAPDOOR.get()), true, "cutout");
@@ -48,7 +53,7 @@ public class TJPBlockstateProvider extends BlockStateProvider {
         trapdoorBlockWithRenderType((TrapDoorBlock) TJPBlocksLootGen.SPRUCE_PEACH_TRAPDOOR.get(), blockTexture(TJPBlocksLootGen.SPRUCE_PEACH_TRAPDOOR.get()), true, "cutout");
         trapdoorBlockWithRenderType((TrapDoorBlock) TJPBlocksLootGen.CRIMSON_PEACH_TRAPDOOR.get(), blockTexture(TJPBlocksLootGen.CRIMSON_PEACH_TRAPDOOR.get()), true, "cutout");
         trapdoorBlockWithRenderType((TrapDoorBlock) TJPBlocksLootGen.WARPED_PEACH_TRAPDOOR.get(), blockTexture(TJPBlocksLootGen.WARPED_PEACH_TRAPDOOR.get()), true, "cutout");
-
+        trapdoorBlockWithRenderType((TrapDoorBlock) TJPBlocksLootGen.MANGROVE_PEACH_TRAPDOOR.get(), blockTexture(TJPBlocksLootGen.MANGROVE_PEACH_TRAPDOOR.get()), true, "cutout");
     }
 
 }

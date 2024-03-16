@@ -39,6 +39,8 @@ public class TJPBlocksLootGen {
             () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
     public static final RegistryObject<Block> CRIMSON_PEACH_DOOR = registerBlock("crimson_peach_door",
             () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static final RegistryObject<Block> MANGROVE_PEACH_DOOR = registerBlock("mangrove_peach_door",
+            () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
 
     public static final RegistryObject<Block> BIRCH_PEACH_TRAPDOOR = registerBlock("birch_peach_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
@@ -55,6 +57,8 @@ public class TJPBlocksLootGen {
     public static final RegistryObject<Block> WARPED_PEACH_TRAPDOOR = registerBlock("warped_peach_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
     public static final RegistryObject<Block> CRIMSON_PEACH_TRAPDOOR = registerBlock("crimson_peach_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static final RegistryObject<Block> MANGROVE_PEACH_TRAPDOOR = registerBlock("mangrove_peach_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
 
 

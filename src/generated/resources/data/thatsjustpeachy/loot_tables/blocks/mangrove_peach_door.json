@@ -13,14 +13,14 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "block": "thatsjustpeachy:acacia_peach_door",
+              "block": "thatsjustpeachy:mangrove_peach_door",
               "condition": "minecraft:block_state_property",
               "properties": {
                 "half": "lower"
               }
             }
           ],
-          "name": "thatsjustpeachy:acacia_peach_door"
+          "name": "thatsjustpeachy:mangrove_peach_door"
         }
       ],
       "rolls": 1.0

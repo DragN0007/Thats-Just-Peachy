@@ -11,15 +11,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "conditions": [
-            {
-              "block": "thatsjustpeachy:birch_peach_trapdoor",
-              "condition": "minecraft:block_state_property",
-              "properties": {
-                "half": "lower"
-              }
-            }
-          ],
           "name": "thatsjustpeachy:birch_peach_trapdoor"
         }
       ],

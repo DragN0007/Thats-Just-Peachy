@@ -119,6 +119,16 @@ public class TJPRecipeMaker extends RecipeProvider implements IConditionBuilder 
                         .of(TJPItems.PEACH.get()).build()))
                 .save(pFinishedRecipeConsumer);
 
+        ShapedRecipeBuilder.shaped(TJPBlocksLootGen.MANGROVE_PEACH_DOOR.get(), 3)
+                .define('A', TJPItems.PEACH.get())
+                .define('B', Items.MANGROVE_PLANKS)
+                .pattern("BB ")
+                .pattern("BBA")
+                .pattern("BB ")
+                .unlockedBy("has_peach", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(TJPItems.PEACH.get()).build()))
+                .save(pFinishedRecipeConsumer);
+
 
 
         ShapedRecipeBuilder.shaped(TJPBlocksLootGen.ACACIA_PEACH_TRAPDOOR.get(), 2)
@@ -194,6 +204,16 @@ public class TJPRecipeMaker extends RecipeProvider implements IConditionBuilder 
         ShapedRecipeBuilder.shaped(TJPBlocksLootGen.CRIMSON_PEACH_TRAPDOOR.get(), 2)
                 .define('A', TJPItems.PEACH.get())
                 .define('B', Items.CRIMSON_PLANKS)
+                .pattern(" A ")
+                .pattern("BBB")
+                .pattern("BBB")
+                .unlockedBy("has_peach", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(TJPItems.PEACH.get()).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(TJPBlocksLootGen.MANGROVE_PEACH_TRAPDOOR.get(), 2)
+                .define('A', TJPItems.PEACH.get())
+                .define('B', Items.MANGROVE_PLANKS)
                 .pattern(" A ")
                 .pattern("BBB")
                 .pattern("BBB")
