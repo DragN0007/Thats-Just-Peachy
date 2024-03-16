@@ -19,7 +19,6 @@ public class BobaItem extends Item {
         super(new Properties().craftRemainder(Items.GLASS_BOTTLE).food(new FoodProperties.Builder().nutrition(6).saturationMod(1).build()).tab(TJPItemGroup.GROUP));
         this.effectInstances = effectInstances;
     }
-
     public SoundEvent getDrinkingSound() {
         return SoundEvents.GENERIC_DRINK;
     }
