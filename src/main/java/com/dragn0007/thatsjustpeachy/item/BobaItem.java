@@ -22,17 +22,14 @@ public class BobaItem extends Item {
     public SoundEvent getDrinkingSound() {
         return SoundEvents.GENERIC_DRINK;
     }
-
     @Override
     public SoundEvent getEatingSound() {
         return SoundEvents.GENERIC_DRINK;
     }
-
     @Override
     public UseAnim getUseAnimation(ItemStack pStack) {
         return UseAnim.DRINK;
     }
-
     @Override
     public int getUseDuration(ItemStack pStack) {
         return 32;
