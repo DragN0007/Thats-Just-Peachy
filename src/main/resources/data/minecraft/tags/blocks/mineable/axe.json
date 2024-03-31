@@ -1,0 +1,36 @@
+{
+  "replace": false,
+  "values": [
+    "thatsjustpeachy:peach_planks",
+    "thatsjustpeachy:peach_fence_gate",
+    "thatsjustpeachy:peach_fence",
+    "thatsjustpeachy:peach_leaves",
+    "thatsjustpeachy:peach_log",
+    "thatsjustpeachy:stripped_peach_log",
+    "thatsjustpeachy:peach_wall",
+    "thatsjustpeachy:peach_slab",
+    "thatsjustpeachy:peach_stairs",
+
+    "thatsjustpeachy:peach_door",
+    "thatsjustpeachy:birch_peach_door",
+    "thatsjustpeachy:acacia_peach_door",
+    "thatsjustpeachy:dark_oak_peach_door",
+    "thatsjustpeachy:jungle_peach_door",
+    "thatsjustpeachy:oak_peach_door",
+    "thatsjustpeachy:spruce_peach_door",
+    "thatsjustpeachy:crimson_peach_door",
+    "thatsjustpeachy:warped_peach_door",
+    "thatsjustpeachy:mangrove_peach_door",
+
+    "thatsjustpeachy:peach_trapdoor",
+    "thatsjustpeachy:birch_peach_trapdoor",
+    "thatsjustpeachy:acacia_peach_trapdoor",
+    "thatsjustpeachy:dark_oak_peach_trapdoor",
+    "thatsjustpeachy:jungle_peach_trapdoor",
+    "thatsjustpeachy:oak_peach_trapdoor",
+    "thatsjustpeachy:spruce_peach_trapdoor",
+    "thatsjustpeachy:crimson_peach_trapdoor",
+    "thatsjustpeachy:warped_peach_trapdoor",
+    "thatsjustpeachy:mangrove_peach_trapdoor"
+  ]
+}
