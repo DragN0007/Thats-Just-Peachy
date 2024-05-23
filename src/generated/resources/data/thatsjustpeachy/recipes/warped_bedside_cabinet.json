@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "BAB",
+    "CCC"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:warped_stem"
+    },
+    "B": {
+      "item": "minecraft:warped_planks"
+    },
+    "C": {
+      "item": "minecraft:stripped_warped_stem"
+    }
+  },
+  "result": {
+    "item": "thatsjustpeachy:warped_bedside_cabinet",
+    "count": 2
+  }
+}

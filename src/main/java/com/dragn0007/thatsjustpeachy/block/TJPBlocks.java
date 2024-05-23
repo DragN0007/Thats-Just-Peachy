@@ -69,6 +69,46 @@ public class TJPBlocks {
     public static final RegistryObject<Block> PEACH_WALL_LINER = registerBlock("peach_wall_liner",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
 
+    //Glass
+    public static final RegistryObject<Block> PEACH_STAINED_GLASS_PANE = registerBlock("peach_stained_glass_pane",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_STAINED_GLASS_PANE).noOcclusion()));
+    public static final RegistryObject<Block> FANCY_PEACH_WINDOW = registerBlock("fancy_peach_window",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.GLASS_PANE)));
+    public static final RegistryObject<Block> PEACH_STAINED_FANCY_PEACH_WINDOW = registerBlock("peach_stained_fancy_peach_window",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_STAINED_GLASS_PANE).noOcclusion()));
+    public static final RegistryObject<Block> BLACK_STAINED_FANCY_PEACH_WINDOW = registerBlock("black_stained_fancy_peach_window",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_STAINED_GLASS_PANE).noOcclusion()));
+    public static final RegistryObject<Block> BLUE_STAINED_FANCY_PEACH_WINDOW = registerBlock("blue_stained_fancy_peach_window",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_STAINED_GLASS_PANE).noOcclusion()));
+    public static final RegistryObject<Block> BROWN_STAINED_FANCY_PEACH_WINDOW = registerBlock("brown_stained_fancy_peach_window",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_STAINED_GLASS_PANE).noOcclusion()));
+    public static final RegistryObject<Block> CYAN_STAINED_FANCY_PEACH_WINDOW = registerBlock("cyan_stained_fancy_peach_window",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_STAINED_GLASS_PANE).noOcclusion()));
+    public static final RegistryObject<Block> GRAY_STAINED_FANCY_PEACH_WINDOW = registerBlock("gray_stained_fancy_peach_window",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_STAINED_GLASS_PANE).noOcclusion()));
+    public static final RegistryObject<Block> GREEN_STAINED_FANCY_PEACH_WINDOW = registerBlock("green_stained_fancy_peach_window",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_STAINED_GLASS_PANE).noOcclusion()));
+    public static final RegistryObject<Block> LIGHT_BLUE_STAINED_FANCY_PEACH_WINDOW = registerBlock("light_blue_stained_fancy_peach_window",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_STAINED_GLASS_PANE).noOcclusion()));
+    public static final RegistryObject<Block> LIGHT_GRAY_STAINED_FANCY_PEACH_WINDOW = registerBlock("light_gray_stained_fancy_peach_window",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_STAINED_GLASS_PANE).noOcclusion()));
+    public static final RegistryObject<Block> LIME_STAINED_FANCY_PEACH_WINDOW = registerBlock("lime_stained_fancy_peach_window",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_STAINED_GLASS_PANE).noOcclusion()));
+    public static final RegistryObject<Block> MAGENTA_STAINED_FANCY_PEACH_WINDOW = registerBlock("magenta_stained_fancy_peach_window",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_STAINED_GLASS_PANE).noOcclusion()));
+    public static final RegistryObject<Block> ORANGE_STAINED_FANCY_PEACH_WINDOW = registerBlock("orange_stained_fancy_peach_window",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_STAINED_GLASS_PANE).noOcclusion()));
+    public static final RegistryObject<Block> PINK_STAINED_FANCY_PEACH_WINDOW = registerBlock("pink_stained_fancy_peach_window",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_STAINED_GLASS_PANE).noOcclusion()));
+    public static final RegistryObject<Block> PURPLE_STAINED_FANCY_PEACH_WINDOW = registerBlock("purple_stained_fancy_peach_window",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_STAINED_GLASS_PANE).noOcclusion()));
+    public static final RegistryObject<Block> RED_STAINED_FANCY_PEACH_WINDOW = registerBlock("red_stained_fancy_peach_window",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_STAINED_GLASS_PANE).noOcclusion()));
+    public static final RegistryObject<Block> WHITE_STAINED_FANCY_PEACH_WINDOW = registerBlock("white_stained_fancy_peach_window",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_STAINED_GLASS_PANE).noOcclusion()));
+    public static final RegistryObject<Block> YELLOW_STAINED_FANCY_PEACH_WINDOW = registerBlock("yellow_stained_fancy_peach_window",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_STAINED_GLASS_PANE).noOcclusion()));
+
 
     private static <T extends Block>RegistryObject<T> registerBlockWithoutItem(String name, Supplier<T> block){
         return BLOCKS.register(name, block);

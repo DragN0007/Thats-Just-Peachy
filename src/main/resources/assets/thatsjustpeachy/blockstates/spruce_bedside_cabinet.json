@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "thatsjustpeachy:block/bedroom_decor/spruce_bedside_cabinet",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "thatsjustpeachy:block/bedroom_decor/spruce_bedside_cabinet"
+    },
+    "facing=south": {
+      "model": "thatsjustpeachy:block/bedroom_decor/spruce_bedside_cabinet",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "thatsjustpeachy:block/bedroom_decor/spruce_bedside_cabinet",
+      "y": 270
+    }
+  }
+}

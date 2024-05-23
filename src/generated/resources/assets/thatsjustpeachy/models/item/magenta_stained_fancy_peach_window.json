@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "thatsjustpeachy:block/magenta_stained_fancy_peach_window"
+  }
+}

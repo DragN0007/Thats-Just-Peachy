@@ -12,6 +12,10 @@
   "item.thatsjustpeachy.peach_icecream": "Peaches & Ice Cream",
   "item.thatsjustpeachy.peach_pastry": "Peach Pastry",
   "item.thatsjustpeachy.peach_soda": "Peach Soda",
+  "item.thatsjustpeachy.peach_cookie": "Peach Cookie",
+  "item.thatsjustpeachy.iced_peach_cookie": "Iced Peach Cookie",
+  "item.thatsjustpeachy.peach_cupcake": "Peach Cupcake",
+  "item.thatsjustpeachy.peach_cupcake_fancy": "Fancy Peach Cupcake",
 
   "item.thatsjustpeachy.immortal_peach": "Peach of Life",
 
@@ -33,6 +37,26 @@
   "block.thatsjustpeachy.peach_wall_liner": "Peach Planks Wall Liner",
   "block.thatsjustpeachy.stripped_peach_log": "Stripped Peach Log",
 
+  "block.thatsjustpeachy.fancy_peach_window": "Fancy Peach Window",
+  "block.thatsjustpeachy.peach_stained_glass_pane": "Peach Stained Glass Pane",
+  "block.thatsjustpeachy.peach_stained_fancy_peach_window": "Peach Stained Peach Window",
+  "block.thatsjustpeachy.black_stained_fancy_peach_window": "Black Stained Peach Window",
+  "block.thatsjustpeachy.blue_stained_fancy_peach_window": "Blue Stained Peach Window",
+  "block.thatsjustpeachy.brown_stained_fancy_peach_window": "Brown Stained Peach Window",
+  "block.thatsjustpeachy.cyan_stained_fancy_peach_window": "Cyan Stained Peach Window",
+  "block.thatsjustpeachy.gray_stained_fancy_peach_window": "Gray Stained Peach Window",
+  "block.thatsjustpeachy.green_stained_fancy_peach_window": "Green Stained Peach Window",
+  "block.thatsjustpeachy.light_blue_stained_fancy_peach_window": "Light Blue Stained Peach Window",
+  "block.thatsjustpeachy.light_gray_stained_fancy_peach_window": "Light Gray Stained Peach Window",
+  "block.thatsjustpeachy.lime_stained_fancy_peach_window": "Lime Stained Peach Window",
+  "block.thatsjustpeachy.magenta_stained_fancy_peach_window": "Magenta Stained Peach Window",
+  "block.thatsjustpeachy.orange_stained_fancy_peach_window": "Orange Stained Peach Window",
+  "block.thatsjustpeachy.pink_stained_fancy_peach_window": "Pink Stained Peach Window",
+  "block.thatsjustpeachy.purple_stained_fancy_peach_window": "Purple Stained Peach Window",
+  "block.thatsjustpeachy.red_stained_fancy_peach_window": "Red Stained Peach Window",
+  "block.thatsjustpeachy.white_stained_fancy_peach_window": "White Stained Peach Window",
+  "block.thatsjustpeachy.yellow_stained_fancy_peach_window": "Yellow Stained Peach Window",
+
   "block.thatsjustpeachy.acacia_peach_door": "Acacia Peach Door",
   "block.thatsjustpeachy.acacia_peach_trapdoor": "Acacia Peach Trapdoor",
   "block.thatsjustpeachy.birch_peach_door": "Birch Peach Door",
@@ -49,6 +73,16 @@
   "block.thatsjustpeachy.warped_peach_trapdoor": "Warped Peach Trapdoor",
   "block.thatsjustpeachy.crimson_peach_door": "Crimson Peach Door",
   "block.thatsjustpeachy.crimson_peach_trapdoor": "Crimson Peach Trapdoor",
+
+  "block.thatsjustpeachy.peach_bedside_cabinet": "Peach Bedside Cabinet",
+  "block.thatsjustpeachy.acacia_bedside_cabinet": "Acacia Bedside Cabinet",
+  "block.thatsjustpeachy.birch_bedside_cabinet": "Birch Bedside Cabinet",
+  "block.thatsjustpeachy.oak_bedside_cabinet": "Oak Bedside Cabinet",
+  "block.thatsjustpeachy.spruce_bedside_cabinet": "Spruce Bedside Cabinet",
+  "block.thatsjustpeachy.dark_oak_bedside_cabinet": "Dark Oak Bedside Cabinet",
+  "block.thatsjustpeachy.jungle_bedside_cabinet": "Jungle Bedside Cabinet",
+  "block.thatsjustpeachy.warped_bedside_cabinet": "Warped Bedside Cabinet",
+  "block.thatsjustpeachy.crimson_bedside_cabinet": "Crimson Bedside Cabinet",
 
   "item.thatsjustpeachy.peach_pit": "Peach Pit"
 }

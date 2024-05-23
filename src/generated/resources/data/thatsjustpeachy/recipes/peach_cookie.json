@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " A ",
+    "BBB"
+  ],
+  "key": {
+    "A": {
+      "item": "thatsjustpeachy:peach"
+    },
+    "B": {
+      "item": "minecraft:wheat"
+    }
+  },
+  "result": {
+    "item": "thatsjustpeachy:peach_cookie",
+    "count": 3
+  }
+}

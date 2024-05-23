@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "BAB",
+    "CCC"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:spruce_log"
+    },
+    "B": {
+      "item": "minecraft:spruce_planks"
+    },
+    "C": {
+      "item": "minecraft:stripped_spruce_log"
+    }
+  },
+  "result": {
+    "item": "thatsjustpeachy:spruce_bedside_cabinet",
+    "count": 2
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_glass_pane_side",
+  "textures": {
+    "pane": "thatsjustpeachy:block/peach_stained_fancy_peach_window",
+    "edge": "thatsjustpeachy:block/fancy_peach_window_top"
+  }
+}

@@ -39,6 +39,14 @@ public class TJPItems {
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationMod(1).effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 600, 0), 0.8F).build()).tab(TJPItemGroup.GROUP)));
     public static final RegistryObject<Item> PEACH_PASTRY = ITEMS.register("peach_pastry",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(7).saturationMod(1).effect(new MobEffectInstance(MobEffects.DIG_SPEED, 600, 0), 0.8F).build()).tab(TJPItemGroup.GROUP)));
+    public static final RegistryObject<Item> PEACH_COOKIE = ITEMS.register("peach_cookie",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationMod(1).effect(new MobEffectInstance(MobEffects.LUCK, 600, 0), 0.8F).build()).tab(TJPItemGroup.GROUP)));
+    public static final RegistryObject<Item> ICED_PEACH_COOKIE = ITEMS.register("iced_peach_cookie",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(7).saturationMod(1).effect(new MobEffectInstance(MobEffects.REGENERATION, 600, 0), 0.8F).build()).tab(TJPItemGroup.GROUP)));
+    public static final RegistryObject<Item> PEACH_CUPCAKE = ITEMS.register("peach_cupcake",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(6).saturationMod(1).effect(new MobEffectInstance(MobEffects.HEAL, 600, 0), 0.8F).build()).tab(TJPItemGroup.GROUP)));
+    public static final RegistryObject<Item> PEACH_CUPCAKE_FANCY = ITEMS.register("peach_cupcake_fancy",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(8).saturationMod(1).effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 600, 0), 0.8F).build()).tab(TJPItemGroup.GROUP)));
 
 
 

@@ -25,6 +25,16 @@ public class TJPBlockLootTables extends BlockLoot {
         this.dropSelf(TJPBlocksLootGen.SPRUCE_PEACH_TRAPDOOR.get());
         this.dropSelf(TJPBlocksLootGen.WARPED_PEACH_TRAPDOOR.get());
         this.dropSelf(TJPBlocksLootGen.CRIMSON_PEACH_TRAPDOOR.get());
+
+        this.dropSelf(TJPBlocksLootGen.PEACH_BEDSIDE_CABINET.get());
+        this.dropSelf(TJPBlocksLootGen.ACACIA_BEDSIDE_CABINET.get());
+        this.dropSelf(TJPBlocksLootGen.BIRCH_BEDSIDE_CABINET.get());
+        this.dropSelf(TJPBlocksLootGen.DARK_OAK_BEDSIDE_CABINET.get());
+        this.dropSelf(TJPBlocksLootGen.OAK_BEDSIDE_CABINET.get());
+        this.dropSelf(TJPBlocksLootGen.JUNGLE_BEDSIDE_CABINET.get());
+        this.dropSelf(TJPBlocksLootGen.SPRUCE_BEDSIDE_CABINET.get());
+        this.dropSelf(TJPBlocksLootGen.WARPED_BEDSIDE_CABINET.get());
+        this.dropSelf(TJPBlocksLootGen.CRIMSON_BEDSIDE_CABINET.get());
     }
 
     @Override

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "BAB",
+    "CCC"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:jungle_log"
+    },
+    "B": {
+      "item": "minecraft:jungle_planks"
+    },
+    "C": {
+      "item": "minecraft:stripped_jungle_log"
+    }
+  },
+  "result": {
+    "item": "thatsjustpeachy:jungle_bedside_cabinet",
+    "count": 2
+  }
+}

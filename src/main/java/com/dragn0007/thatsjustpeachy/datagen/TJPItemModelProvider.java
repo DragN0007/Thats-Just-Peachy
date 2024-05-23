@@ -1,6 +1,7 @@
 package com.dragn0007.thatsjustpeachy.datagen;
 
 import com.dragn0007.thatsjustpeachy.ThatsJustPeachy;
+import com.dragn0007.thatsjustpeachy.block.TJPBlocks;
 import com.dragn0007.thatsjustpeachy.item.TJPItems;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
@@ -20,7 +21,30 @@ public class TJPItemModelProvider extends ItemModelProvider {
 
         simpleItem(TJPItems.PEACH_SODA.get());
         simpleItem(TJPItems.PEACH_PASTRY.get());
+        simpleItem(TJPItems.PEACH_COOKIE.get());
+        simpleItem(TJPItems.ICED_PEACH_COOKIE.get());
+        simpleItem(TJPItems.PEACH_CUPCAKE.get());
+        simpleItem(TJPItems.PEACH_CUPCAKE_FANCY.get());
 
+        simpleSpriteBlockItem(TJPBlocks.FANCY_PEACH_WINDOW.get());
+        simpleSpriteBlockItem(TJPBlocks.PEACH_STAINED_GLASS_PANE.get());
+        simpleSpriteBlockItem(TJPBlocks.PEACH_STAINED_FANCY_PEACH_WINDOW.get());
+        simpleSpriteBlockItem(TJPBlocks.BLACK_STAINED_FANCY_PEACH_WINDOW.get());
+        simpleSpriteBlockItem(TJPBlocks.BLUE_STAINED_FANCY_PEACH_WINDOW.get());
+        simpleSpriteBlockItem(TJPBlocks.BROWN_STAINED_FANCY_PEACH_WINDOW.get());
+        simpleSpriteBlockItem(TJPBlocks.CYAN_STAINED_FANCY_PEACH_WINDOW.get());
+        simpleSpriteBlockItem(TJPBlocks.GREEN_STAINED_FANCY_PEACH_WINDOW.get());
+        simpleSpriteBlockItem(TJPBlocks.GRAY_STAINED_FANCY_PEACH_WINDOW.get());
+        simpleSpriteBlockItem(TJPBlocks.LIGHT_BLUE_STAINED_FANCY_PEACH_WINDOW.get());
+        simpleSpriteBlockItem(TJPBlocks.LIGHT_GRAY_STAINED_FANCY_PEACH_WINDOW.get());
+        simpleSpriteBlockItem(TJPBlocks.LIME_STAINED_FANCY_PEACH_WINDOW.get());
+        simpleSpriteBlockItem(TJPBlocks.MAGENTA_STAINED_FANCY_PEACH_WINDOW.get());
+        simpleSpriteBlockItem(TJPBlocks.ORANGE_STAINED_FANCY_PEACH_WINDOW.get());
+        simpleSpriteBlockItem(TJPBlocks.PURPLE_STAINED_FANCY_PEACH_WINDOW.get());
+        simpleSpriteBlockItem(TJPBlocks.PINK_STAINED_FANCY_PEACH_WINDOW.get());
+        simpleSpriteBlockItem(TJPBlocks.RED_STAINED_FANCY_PEACH_WINDOW.get());
+        simpleSpriteBlockItem(TJPBlocks.WHITE_STAINED_FANCY_PEACH_WINDOW.get());
+        simpleSpriteBlockItem(TJPBlocks.YELLOW_STAINED_FANCY_PEACH_WINDOW.get());
     }
 
      private ItemModelBuilder simpleSpriteBlockItem(Block block) {

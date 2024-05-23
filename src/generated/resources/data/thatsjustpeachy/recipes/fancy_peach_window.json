@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BCB",
+    "CAC",
+    "BCB"
+  ],
+  "key": {
+    "A": {
+      "item": "thatsjustpeachy:peach"
+    },
+    "B": {
+      "item": "minecraft:iron_nugget"
+    },
+    "C": {
+      "item": "minecraft:glass_pane"
+    }
+  },
+  "result": {
+    "item": "thatsjustpeachy:fancy_peach_window",
+    "count": 8
+  }
+}

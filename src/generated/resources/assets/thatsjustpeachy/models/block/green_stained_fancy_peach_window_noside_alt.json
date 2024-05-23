@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_glass_pane_noside_alt",
+  "textures": {
+    "pane": "thatsjustpeachy:block/green_stained_fancy_peach_window"
+  }
+}

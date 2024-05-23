@@ -2,6 +2,7 @@ package com.dragn0007.thatsjustpeachy.block;
 
 import com.dragn0007.thatsjustpeachy.ThatsJustPeachy;
 import com.dragn0007.thatsjustpeachy.block.custom.TJPStrippableLog;
+import com.dragn0007.thatsjustpeachy.block.custom.vox.BedsideCabinetVox;
 import com.dragn0007.thatsjustpeachy.block.custom.vox.PaperLanternVox;
 import com.dragn0007.thatsjustpeachy.block.custom.vox.PeachLanternVox;
 import com.dragn0007.thatsjustpeachy.item.TJPItemGroup;
@@ -61,6 +62,25 @@ public class TJPBlocksLootGen {
             () -> new TrapDoorBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
     public static final RegistryObject<Block> CRIMSON_PEACH_TRAPDOOR = registerBlock("crimson_peach_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+
+    public static final RegistryObject<Block> PEACH_BEDSIDE_CABINET = registerBlock("peach_bedside_cabinet",
+            () -> new BedsideCabinetVox());
+    public static final RegistryObject<Block> BIRCH_BEDSIDE_CABINET = registerBlock("birch_bedside_cabinet",
+            () -> new BedsideCabinetVox());
+    public static final RegistryObject<Block> DARK_OAK_BEDSIDE_CABINET = registerBlock("dark_oak_bedside_cabinet",
+            () -> new BedsideCabinetVox());
+    public static final RegistryObject<Block> ACACIA_BEDSIDE_CABINET = registerBlock("acacia_bedside_cabinet",
+            () -> new BedsideCabinetVox());
+    public static final RegistryObject<Block> OAK_BEDSIDE_CABINET = registerBlock("oak_bedside_cabinet",
+            () -> new BedsideCabinetVox());
+    public static final RegistryObject<Block> JUNGLE_BEDSIDE_CABINET = registerBlock("jungle_bedside_cabinet",
+            () -> new BedsideCabinetVox());
+    public static final RegistryObject<Block> SPRUCE_BEDSIDE_CABINET = registerBlock("spruce_bedside_cabinet",
+            () -> new BedsideCabinetVox());
+    public static final RegistryObject<Block> WARPED_BEDSIDE_CABINET = registerBlock("warped_bedside_cabinet",
+            () -> new BedsideCabinetVox());
+    public static final RegistryObject<Block> CRIMSON_BEDSIDE_CABINET = registerBlock("crimson_bedside_cabinet",
+            () -> new BedsideCabinetVox());
 
 
     private static <T extends Block>RegistryObject<T> registerBlockWithoutItem(String name, Supplier<T> block){

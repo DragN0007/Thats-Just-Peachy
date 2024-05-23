@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "BAB",
+    "CCC"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:crimson_stem"
+    },
+    "B": {
+      "item": "minecraft:crimson_planks"
+    },
+    "C": {
+      "item": "minecraft:stripped_crimson_stem"
+    }
+  },
+  "result": {
+    "item": "thatsjustpeachy:crimson_bedside_cabinet",
+    "count": 2
+  }
+}

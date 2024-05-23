@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BAB",
+    "BBB"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:black_dye"
+    },
+    "B": {
+      "item": "thatsjustpeachy:fancy_peach_window"
+    }
+  },
+  "result": {
+    "item": "thatsjustpeachy:black_stained_fancy_peach_window",
+    "count": 8
+  }
+}

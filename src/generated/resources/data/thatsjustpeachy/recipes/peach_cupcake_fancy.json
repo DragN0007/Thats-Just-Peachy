@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "thatsjustpeachy:peach"
+    },
+    {
+      "item": "thatsjustpeachy:peach_cupcake"
+    }
+  ],
+  "result": {
+    "item": "thatsjustpeachy:peach_cupcake_fancy"
+  }
+}

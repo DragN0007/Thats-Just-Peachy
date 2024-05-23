@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "BAB",
+    "CCC"
+  ],
+  "key": {
+    "A": {
+      "item": "thatsjustpeachy:peach_log"
+    },
+    "B": {
+      "item": "thatsjustpeachy:peach_planks"
+    },
+    "C": {
+      "item": "thatsjustpeachy:stripped_peach_log"
+    }
+  },
+  "result": {
+    "item": "thatsjustpeachy:peach_bedside_cabinet",
+    "count": 2
+  }
+}

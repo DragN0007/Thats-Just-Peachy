@@ -1,0 +1,8 @@
+{
+  "parent": "thatsjustpeachy:block/parent/bedside_cabinet",
+  "textures": {
+    "planks": "thatsjustpeachy:block/peach_planks",
+    "stripped_log": "thatsjustpeachy:block/stripped_peach_log",
+    "log": "thatsjustpeachy:block/peach_log"
+  }
+}
