@@ -1,0 +1,37 @@
+modLoader="javafml"
+loaderVersion="47,)"
+license="All Rights Reserved, DragN0007"
+#issueTrackerURL="https://discord.gg/2WznNTtVac"
+[[mods]]
+modId="thatsjustpeachy"
+version="${2.0}"
+displayName="That's Just Peachy!"
+logoFile="tjp_big.png"
+authors="DragN0007"
+description='''
+A mod based around justpeachy, adding peaches and peach-based recipes.
+'''
+[[dependencies.thatsjustpeachy]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.thatsjustpeachy]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1]"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.thatsjustpeachy]]
+modId="patchouli"
+mandatory=true
+versionRange = "[1.20.1-84,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.thatsjustpeachy]]
+modId="dragncrops"
+mandatory=true
+versionRange = "[1.2,)"
+ordering="NONE"
+side="BOTH"
