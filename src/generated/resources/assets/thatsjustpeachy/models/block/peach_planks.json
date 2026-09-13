@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "thatsjustpeachy:block/peach_planks"
+  }
+}

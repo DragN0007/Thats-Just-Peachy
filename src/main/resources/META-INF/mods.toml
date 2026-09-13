@@ -6,7 +6,7 @@ license="All Rights Reserved, DragN0007"
 modId="thatsjustpeachy"
 version="${2.0}"
 displayName="That's Just Peachy!"
-logoFile="tjp_big.png"
+logoFile= "tjp_big.png"
 authors="DragN0007"
 description='''
 A mod based around justpeachy, adding peaches and peach-based recipes.

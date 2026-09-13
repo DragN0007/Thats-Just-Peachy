@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#forge:is_hot",
+  "features": "thatsjustpeachy:peach",
+  "step": "vegetal_decoration"
+}

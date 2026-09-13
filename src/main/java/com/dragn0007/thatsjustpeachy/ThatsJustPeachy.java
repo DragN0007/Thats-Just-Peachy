@@ -1,5 +1,8 @@
 package com.dragn0007.thatsjustpeachy;
 
+import com.dragn0007.thatsjustpeachy.blocks.TJPBlocks;
+import com.dragn0007.thatsjustpeachy.items.TJPItemGroup;
+import com.dragn0007.thatsjustpeachy.items.TJPItems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;

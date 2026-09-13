@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "thatsjustpeachy:block/stripped_peach_log",
+    "side": "thatsjustpeachy:block/stripped_peach_log"
+  }
+}

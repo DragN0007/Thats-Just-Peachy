@@ -1,0 +1,28 @@
+{
+  "itemGroup.tjp": "That's Just Peachy!",
+
+  "block.thatsjustpeachy.peach_log": "Peach Log",
+  "block.thatsjustpeachy.stripped_peach_log": "Stripped Peach Log",
+  "block.thatsjustpeachy.peach_wood": "Peach Wood",
+  "block.thatsjustpeachy.stripped_peach_wood": "Stripped Peach Wood",
+  "block.thatsjustpeachy.peach_planks": "Peach Planks",
+  "block.thatsjustpeachy.peach_leaves": "Peach Leaves",
+  "block.thatsjustpeachy.peach_sapling": "Peach Sapling",
+  "block.thatsjustpeachy.peach_stairs": "Peach Stairs",
+  "block.thatsjustpeachy.peach_slab": "Peach Slab",
+  "block.thatsjustpeachy.peach_fence": "Peach Fence",
+  "block.thatsjustpeachy.peach_fence_gate": "Peach Fence Gate",
+  "block.thatsjustpeachy.peach_door": "Peach Door",
+  "block.thatsjustpeachy.peach_trapdoor": "Peach Trapdoor",
+
+  "block.thatsjustpeachy.acacia_peach_door": "Acacia Peach Door",
+  "block.thatsjustpeachy.bamboo_peach_door": "Bamboo Peach Door",
+  "block.thatsjustpeachy.birch_peach_door": "Birch Peach Door",
+  "block.thatsjustpeachy.cherry_peach_door": "Cherry Peach Door",
+  "block.thatsjustpeachy.crimson_peach_door": "Crimson Peach Door",
+  "block.thatsjustpeachy.dark_oak_peach_door": "Dark Oak Peach Door",
+  "block.thatsjustpeachy.jungle_peach_door": "Jungle Peach Door",
+  "block.thatsjustpeachy.oak_peach_door": "Oak Peach Door",
+  "block.thatsjustpeachy.spruce_peach_door": "Spruce Peach Door",
+  "block.thatsjustpeachy.warped_peach_door": "Warped Peach Door"
+}

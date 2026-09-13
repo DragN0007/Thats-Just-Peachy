@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    [
+      {
+        "item": "thatsjustpeachy:peach_log"
+      },
+      {
+        "item": "thatsjustpeachy:stripped_peach_log"
+      },
+      {
+        "item": "thatsjustpeachy:peach_wood"
+      },
+      {
+        "item": "thatsjustpeachy:stripped_peach_wood"
+      }
+    ]
+  ],
+  "result": {
+    "count": 4,
+    "item": "thatsjustpeachy:peach_planks"
+  }
+}
