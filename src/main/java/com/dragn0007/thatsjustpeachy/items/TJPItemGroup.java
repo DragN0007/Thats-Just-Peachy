@@ -47,6 +47,11 @@ public class TJPItemGroup {
                         for (DyeColor color : DyeColor.values()) {output.accept(TJPBlocks.PAPER_LANTERNS.get(color).get());}
                         output.accept(TJPBlocks.PEACH_LANTERN.get());
                         for (DyeColor color : DyeColor.values()) {output.accept(TJPBlocks.PEACH_LANTERNS.get(color).get());}
+
+                        output.accept(TJPBlocks.PEACH_FRAMED_GLASS.get());
+                        for (DyeColor color : DyeColor.values()) {output.accept(TJPBlocks.PEACH_FRAMED_GLASSES.get(color).get());}
+                        output.accept(TJPBlocks.PEACH_FRAMED_GLASS_PANE.get());
+                        for (DyeColor color : DyeColor.values()) {output.accept(TJPBlocks.PEACH_FRAMED_PANES.get(color).get());}
                     }).build());
 
     public static void register(IEventBus eventBus) {

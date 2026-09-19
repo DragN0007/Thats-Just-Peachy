@@ -7,10 +7,21 @@ import com.dragn0007.thatsjustpeachy.ThatsJustPeachy;
 import com.dragn0007.thatsjustpeachy.blocks.TJPBlocks;
 import com.dragn0007.thatsjustpeachy.blocks.custom.PaperLantern;
 import com.dragn0007.thatsjustpeachy.blocks.custom.PeachLantern;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
+import net.minecraft.data.models.blockstates.Condition;
+import net.minecraft.data.models.blockstates.MultiPartGenerator;
+import net.minecraft.data.models.blockstates.Variant;
+import net.minecraft.data.models.blockstates.VariantProperties;
+import net.minecraft.data.models.model.ModelLocationUtils;
+import net.minecraft.data.models.model.ModelTemplates;
+import net.minecraft.data.models.model.TextureMapping;
+import net.minecraft.data.models.model.TexturedModel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.DyeColor;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
@@ -74,6 +85,24 @@ public class TJPBlockstateProvider extends BlockStateProvider {
             PeachLantern block = blockRegistryObject.get();
             lanternBlock(block, color.toString().toLowerCase() + "_peach_lantern", "peach_lantern");
         }
+
+        glassBlock(TJPBlocks.PEACH_FRAMED_GLASS.get());
+        for (DyeColor color : DyeColor.values()) {
+            RegistryObject<GlassBlock> blockRegistryObject = TJPBlocks.PEACH_FRAMED_GLASSES.get(color);
+            GlassBlock block = blockRegistryObject.get();
+            glassBlock(block);
+        }
+
+        paneBlockWithRenderType((IronBarsBlock) TJPBlocks.PEACH_FRAMED_GLASS_PANE.get(),
+                new ResourceLocation(ThatsJustPeachy.MODID, "block/peach_framed_glass"),
+                new ResourceLocation(ThatsJustPeachy.MODID, "block/peach_framed_glass_pane_top"), "translucent");
+        for (DyeColor color : DyeColor.values()) {
+            RegistryObject<IronBarsBlock> blockRegistryObject = TJPBlocks.PEACH_FRAMED_PANES.get(color);
+            IronBarsBlock block = blockRegistryObject.get();
+            paneBlockWithRenderType(block,
+                    new ResourceLocation(ThatsJustPeachy.MODID, "block/peach_framed_" + color.getName().toLowerCase() + "_stained_glass"),
+                    new ResourceLocation(ThatsJustPeachy.MODID, "block/peach_framed_glass_pane_top"), "translucent");
+        }
     }
 
     private void lanternBlock(Block block, String getTextureName, String modelPath) {
@@ -116,6 +145,14 @@ public class TJPBlockstateProvider extends BlockStateProvider {
                             .renderType("cutout"))
                     .build();
         });
+    }
+
+    private void glassBlock(Block block) {
+        String name = BuiltInRegistries.BLOCK.getKey(block).getPath();
+        var model = models().cubeAll(name, blockTexture(block))
+                .renderType("translucent");
+        getVariantBuilder(block).partialState()
+                .setModels(new ConfiguredModel(model));
     }
 
     public ResourceLocation wildPlantTexture(String getTextureName) {

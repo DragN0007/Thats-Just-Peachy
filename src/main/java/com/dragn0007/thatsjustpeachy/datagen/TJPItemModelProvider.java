@@ -12,6 +12,7 @@ import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DoorBlock;
+import net.minecraft.world.level.block.IronBarsBlock;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -45,6 +46,12 @@ public class TJPItemModelProvider extends ItemModelProvider {
         withExistingParent("peach_leaves", modLoc("block/peach_leaves_stage3"));
         withExistingParent("peach_trapdoor", modLoc("block/peach_trapdoor_bottom"));
         for (TJPBlocks.Woods color : TJPBlocks.Woods.values()) {advancedDoorSpriteBlock(TJPBlocks.DOORS.get(color));}
+        advancedBlockItem(TJPBlocks.PEACH_FRAMED_GLASS_PANE, "peach_framed_glass");
+        for (DyeColor color : DyeColor.values()) {ironBarsSpriteBlock(TJPBlocks.PEACH_FRAMED_PANES.get(color),
+                "peach_framed_" + color.getName().toLowerCase() + "_stained_glass");}
+        withExistingParent("peach_framed_glass", modLoc("block/peach_framed_glass"));
+        for (DyeColor color : DyeColor.values()) {withExistingParent("peach_framed_" + color.getName().toLowerCase() + "_stained_glass",
+                modLoc("block/peach_framed_" + color.getName().toLowerCase() + "_stained_glass"));}
     }
 
     public ItemModelBuilder simpleItem(RegistryObject<Item> item) {
@@ -82,9 +89,10 @@ public class TJPItemModelProvider extends ItemModelProvider {
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(ThatsJustPeachy.MODID,"item/" + block.getId().getPath()));
     }
-    private ItemModelBuilder lanternBlock(RegistryObject<PeachLantern> block) {
-        return withExistingParent(block.getId().getPath(),
+    public ItemModelBuilder ironBarsSpriteBlock(RegistryObject<IronBarsBlock> item, String getTextureName) {
+        return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
-                new ResourceLocation(ThatsJustPeachy.MODID,"item/" + block.getId().getPath()));
+                new ResourceLocation(ThatsJustPeachy.MODID,"block/" + getTextureName))
+                .renderType(new ResourceLocation("minecraft", "translucent"));
     }
 }

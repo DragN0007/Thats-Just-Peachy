@@ -16,6 +16,7 @@ import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
@@ -62,6 +63,11 @@ public class TJPBlockLoot extends BlockLootSubProvider {
         for (DyeColor color : DyeColor.values()) {this.dropSelf(TJPBlocks.PEACH_LANTERNS.get(color).get());}
         this.dropSelf(TJPBlocks.PEACH_PAPER_LANTERN.get());
         this.dropSelf(TJPBlocks.PEACH_LANTERN.get());
+
+        this.dropWhenSilkTouch(TJPBlocks.PEACH_FRAMED_GLASS.get());
+        this.dropWhenSilkTouch(TJPBlocks.PEACH_FRAMED_GLASS_PANE.get());
+        for (DyeColor color : DyeColor.values()) {this.dropSelf(TJPBlocks.PEACH_FRAMED_GLASSES.get(color).get());}
+        for (DyeColor color : DyeColor.values()) {this.dropSelf(TJPBlocks.PEACH_FRAMED_PANES.get(color).get());}
 
         this.add(TJPBlocks.PEACH_MEAD.get(), createMeadDrops(TJPBlocks.PEACH_MEAD.get(), TJPItems.PEACH_MEAD.get()));
         this.dropOther(TJPBlocks.FERMENTED_PEACH_MEAD.get(), TJPBlocks.FERMENTED_PEACH_MEAD.get());

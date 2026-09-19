@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/template_glass_pane_side",
+  "render_type": "minecraft:translucent",
+  "textures": {
+    "edge": "thatsjustpeachy:block/peach_framed_glass_pane_top",
+    "pane": "thatsjustpeachy:block/peach_framed_orange_stained_glass"
+  }
+}

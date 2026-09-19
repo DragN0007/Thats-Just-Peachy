@@ -17,6 +17,7 @@ import net.minecraft.world.item.PlaceOnWaterBlockItem;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -118,6 +119,38 @@ public class TJPBlocks {
                     () -> new BlockItem(block.get(), new Item.Properties()));
             PEACH_LANTERNS.put(color, block);
             PEACH_LANTERN_ITEMS.put(color, blockItem);
+        }
+    }
+
+    public static final RegistryObject<Block> PEACH_FRAMED_GLASS = registerBlock("peach_framed_glass",
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(GLASS)));
+
+    public static final Map<DyeColor, RegistryObject<GlassBlock>> PEACH_FRAMED_GLASSES = new EnumMap<>(DyeColor.class);
+    public static final Map<DyeColor, RegistryObject<Item>> PEACH_FRAMED_GLASS_ITEMS = new EnumMap<>(DyeColor.class);
+    static {
+        for (DyeColor color : DyeColor.values()) {
+            String blockName = "peach_framed_" + color.getName() + "_stained_glass";
+            RegistryObject<GlassBlock> block = BLOCKS.register(blockName, () -> new GlassBlock(BlockBehaviour.Properties.copy(GLASS)));
+            RegistryObject<Item> blockItem = TJPItems.ITEMS.register(blockName,
+                    () -> new BlockItem(block.get(), new Item.Properties()));
+            PEACH_FRAMED_GLASSES.put(color, block);
+            PEACH_FRAMED_GLASS_ITEMS.put(color, blockItem);
+        }
+    }
+
+    public static final RegistryObject<Block> PEACH_FRAMED_GLASS_PANE = registerBlock("peach_framed_glass_pane",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.GLASS_PANE)));
+
+    public static final Map<DyeColor, RegistryObject<IronBarsBlock>> PEACH_FRAMED_PANES = new EnumMap<>(DyeColor.class);
+    public static final Map<DyeColor, RegistryObject<Item>> PEACH_FRAMED_PANES_ITEMS = new EnumMap<>(DyeColor.class);
+    static {
+        for (DyeColor color : DyeColor.values()) {
+            String blockName = "peach_framed_" + color.getName() + "_stained_glass_pane";
+            RegistryObject<IronBarsBlock> block = BLOCKS.register(blockName, () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.GLASS_PANE)));
+            RegistryObject<Item> blockItem = TJPItems.ITEMS.register(blockName,
+                    () -> new BlockItem(block.get(), new Item.Properties()));
+            PEACH_FRAMED_PANES.put(color, block);
+            PEACH_FRAMED_PANES_ITEMS.put(color, blockItem);
         }
     }
 
