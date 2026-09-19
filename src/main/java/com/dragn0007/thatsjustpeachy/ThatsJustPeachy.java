@@ -16,6 +16,8 @@ public class ThatsJustPeachy {
 
     public static final String MODID = "thatsjustpeachy";
 
+    //todo: glass & lantern recipes.  CO pot, teapot, distiller, wine barrel recipes.  peach pit
+
     public ThatsJustPeachy() {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);

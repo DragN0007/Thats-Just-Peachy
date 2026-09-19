@@ -1,7 +1,11 @@
 package com.dragn0007.thatsjustpeachy.datagen;
 
+import com.dragn0007.dragncrops.items.COItems;
+import com.dragn0007.dragncrops.util.COTags;
 import com.dragn0007.thatsjustpeachy.ThatsJustPeachy;
 import com.dragn0007.thatsjustpeachy.blocks.TJPBlocks;
+import com.dragn0007.thatsjustpeachy.items.TJPItems;
+import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.FinishedRecipe;
@@ -10,6 +14,7 @@ import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.recipes.ShapelessRecipeBuilder;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
@@ -28,7 +33,73 @@ public class TJPRecipeMaker extends RecipeProvider implements IConditionBuilder 
     }
 
     public void buildCommonRecipes(Consumer<FinishedRecipe> pFinishedRecipeConsumer) {
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, TJPItems.PEACH_JAM.get())
+                .requires(TJPItems.PEACH.get())
+                .requires(TJPItems.PEACH.get())
+                .requires(COTags.Items.SUGAR)
+                .requires(COTags.Items.SUGAR)
+                .unlockedBy("has_sugar", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COTags.Items.SUGAR)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, TJPItems.PEACH_CANDY.get())
+                .requires(TJPItems.PEACH.get())
+                .requires(COTags.Items.SUGAR)
+                .unlockedBy("has_sugar", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COTags.Items.SUGAR)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, TJPItems.PEACH_TART.get())
+                .requires(TJPItems.PEACH_JAM.get())
+                .requires(COTags.Items.SUGAR)
+                .requires(COTags.Items.FLOUR)
+                .unlockedBy("has_sugar", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COTags.Items.SUGAR)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, TJPItems.PEACH_GELATIN.get())
+                .requires(TJPItems.PEACH_JAM.get())
+                .requires(TJPItems.PEACH.get())
+                .requires(COTags.Items.SUGAR)
+                .requires(COTags.Items.SUGAR)
+                .unlockedBy("has_sugar", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COTags.Items.SUGAR)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.UNFERMENTED_APPLE_MEAD.get())
+                .requires(TJPItems.PEACH.get())
+                .requires(COTags.Items.SUGAR)
+                .requires(COItems.GRAIN.get())
+                .requires(Items.HONEY_BOTTLE)
+                .unlockedBy("has_sugar", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COTags.Items.SUGAR)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, TJPItems.PEACH_COCKTAIL.get())
+                .requires(TJPItems.PEACH.get())
+                .requires(COTags.Items.SUGAR)
+                .requires(COItems.COCONUT.get())
+                .requires(COItems.LIME.get())
+                .unlockedBy("has_sugar", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COTags.Items.SUGAR)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, TJPItems.PEACH_PIE.get())
+                .requires(TJPItems.PEACH.get())
+                .requires(TJPItems.PEACH.get())
+                .requires(COTags.Items.SUGAR)
+                .requires(COTags.Items.FLOUR)
+                .requires(COTags.Items.EGG)
+                .unlockedBy("has_sugar", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COTags.Items.SUGAR)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
     }
 
     private static void buildWoodRecipes(Consumer<FinishedRecipe> consumer, TJPBlocks.WoodType wood) {
