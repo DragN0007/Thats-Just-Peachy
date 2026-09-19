@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "thatsjustpeachy:block/candy/peach_candy",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "thatsjustpeachy:block/candy/peach_candy"
+    },
+    "facing=south": {
+      "model": "thatsjustpeachy:block/candy/peach_candy",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "thatsjustpeachy:block/candy/peach_candy",
+      "y": 270
+    }
+  }
+}

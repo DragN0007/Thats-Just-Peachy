@@ -1,12 +1,17 @@
 package com.dragn0007.thatsjustpeachy.datagen;
 
+import com.dragn0007.dragncrops.blocks.COBlocks;
 import com.dragn0007.dragncrops.blocks.crop.base.FruitLeaves;
+import com.dragn0007.dragncrops.items.COItems;
 import com.dragn0007.thatsjustpeachy.ThatsJustPeachy;
 import com.dragn0007.thatsjustpeachy.blocks.TJPBlocks;
+import com.dragn0007.thatsjustpeachy.blocks.custom.PaperLantern;
+import com.dragn0007.thatsjustpeachy.blocks.custom.PeachLantern;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
@@ -55,6 +60,36 @@ public class TJPBlockstateProvider extends BlockStateProvider {
             doorBlockWithRenderType(block, new ResourceLocation(blockTexture(block) + "_bottom"),
                     new ResourceLocation(blockTexture(block) + "_top"), "cutout");
         }
+
+        lanternBlock(TJPBlocks.PEACH_PAPER_LANTERN.get(), "peach_paper_lantern", "peach_paper_lantern");
+        for (DyeColor color : DyeColor.values()) {
+            RegistryObject<PaperLantern> blockRegistryObject = TJPBlocks.PAPER_LANTERNS.get(color);
+            PaperLantern block = blockRegistryObject.get();
+            lanternBlock(block, color.toString().toLowerCase() + "_peach_paper_lantern", "peach_paper_lantern");
+        }
+
+        lanternBlock(TJPBlocks.PEACH_LANTERN.get(), "peach_lantern", "peach_lantern");
+        for (DyeColor color : DyeColor.values()) {
+            RegistryObject<PeachLantern> blockRegistryObject = TJPBlocks.PEACH_LANTERNS.get(color);
+            PeachLantern block = blockRegistryObject.get();
+            lanternBlock(block, color.toString().toLowerCase() + "_peach_lantern", "peach_lantern");
+        }
+    }
+
+    private void lanternBlock(Block block, String getTextureName, String modelPath) {
+        ResourceLocation texture = modLoc("block/" + getTextureName);
+        String blockPath = block.builtInRegistryHolder().key().location().getPath();
+        ModelFile model = models().withExistingParent(blockPath, modLoc("block/parent/" + modelPath))
+                .texture("particle", texture)
+                .texture("texture", texture)
+                .renderType("cutout");
+        getVariantBuilder(block).forAllStatesExcept(state -> {
+            ModelFile modelFile = model;
+            return ConfiguredModel.builder()
+                    .modelFile(modelFile)
+                    .build();
+        });
+        simpleBlockItem(block, model);
     }
 
     public void createLeaves(FruitLeaves block, String modelNamePrefix, String textureNamePrefix, int... stageMap) {

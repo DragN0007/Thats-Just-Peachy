@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "thatsjustpeachy:unfermented_peach_mead"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "thatsjustpeachy:blocks/unfermented_peach_mead"
+}

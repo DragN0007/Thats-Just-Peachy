@@ -70,7 +70,7 @@ public class UnfermentedPeachMead extends FermentedBase {
         if (i >= this.getMaxFermentTime()) {
             BlockState blockState = level.getBlockState(pos);
             Direction facingDirection = blockState.getValue(BlockStateProperties.HORIZONTAL_FACING);
-            BlockState state1 = TJPBlocks.PEACH_MEAD.get().defaultBlockState()
+            BlockState state1 = TJPBlocks.FERMENTED_PEACH_MEAD.get().defaultBlockState()
                     .setValue(BlockStateProperties.HORIZONTAL_FACING, facingDirection);
             level.setBlockAndUpdate(pos, state1);
         }

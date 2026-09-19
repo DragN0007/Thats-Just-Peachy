@@ -5,9 +5,7 @@ import com.dragn0007.dragncrops.blocks.custom.food.*;
 import com.dragn0007.dragncrops.blocks.pixel_placement.util.PixelPlacer;
 import com.dragn0007.dragncrops.util.COTags;
 import com.dragn0007.thatsjustpeachy.ThatsJustPeachy;
-import com.dragn0007.thatsjustpeachy.blocks.custom.FlammableRotatedPillarBlock;
-import com.dragn0007.thatsjustpeachy.blocks.custom.PeachLeaves;
-import com.dragn0007.thatsjustpeachy.blocks.custom.UnfermentedPeachMead;
+import com.dragn0007.thatsjustpeachy.blocks.custom.*;
 import com.dragn0007.thatsjustpeachy.items.TJPItems;
 import com.dragn0007.thatsjustpeachy.spawn.tree.PeachTreeGrower;
 import net.minecraft.sounds.SoundEvents;
@@ -93,6 +91,35 @@ public class TJPBlocks {
             TJPBlocks.PEACH_PLANKS, TJPBlocks.PEACH_STAIRS, TJPBlocks.PEACH_SLAB,
             TJPBlocks.PEACH_FENCE, TJPBlocks.PEACH_FENCE_GATE, TJPBlocks.PEACH_DOOR, TJPBlocks.PEACH_TRAPDOOR
     );
+
+    public static final RegistryObject<PaperLantern> PEACH_PAPER_LANTERN = registerBlock("peach_paper_lantern", PaperLantern::new);
+    public static final RegistryObject<PeachLantern> PEACH_LANTERN = registerBlock("peach_lantern", PeachLantern::new);
+
+    public static final Map<DyeColor, RegistryObject<PaperLantern>> PAPER_LANTERNS = new EnumMap<>(DyeColor.class);
+    public static final Map<DyeColor, RegistryObject<Item>> PAPER_LANTERN_ITEMS = new EnumMap<>(DyeColor.class);
+    static {
+        for (DyeColor color : DyeColor.values()) {
+            String blockName = color.getName() + "_peach_paper_lantern";
+            RegistryObject<PaperLantern> block = BLOCKS.register(blockName, PaperLantern::new);
+            RegistryObject<Item> blockItem = TJPItems.ITEMS.register(blockName,
+                    () -> new BlockItem(block.get(), new Item.Properties()));
+            PAPER_LANTERNS.put(color, block);
+            PAPER_LANTERN_ITEMS.put(color, blockItem);
+        }
+    }
+
+    public static final Map<DyeColor, RegistryObject<PeachLantern>> PEACH_LANTERNS = new EnumMap<>(DyeColor.class);
+    public static final Map<DyeColor, RegistryObject<Item>> PEACH_LANTERN_ITEMS = new EnumMap<>(DyeColor.class);
+    static {
+        for (DyeColor color : DyeColor.values()) {
+            String blockName = color.getName() + "_peach_lantern";
+            RegistryObject<PeachLantern> block = BLOCKS.register(blockName, PeachLantern::new);
+            RegistryObject<Item> blockItem = TJPItems.ITEMS.register(blockName,
+                    () -> new BlockItem(block.get(), new Item.Properties()));
+            PEACH_LANTERNS.put(color, block);
+            PEACH_LANTERN_ITEMS.put(color, blockItem);
+        }
+    }
 
     public static final RegistryObject<Block> PEACH_JAM = registerBlockWithoutItem("peach_jam", JamJarBlock::new);
     public static final RegistryObject<TartBlock> PEACH_TART = registerPixelPlacerWithoutItem("peach_tart", TartBlock::new);

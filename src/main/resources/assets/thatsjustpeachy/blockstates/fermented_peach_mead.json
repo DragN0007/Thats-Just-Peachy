@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "thatsjustpeachy:block/mead_jar/peach_mead_jar",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "thatsjustpeachy:block/mead_jar/peach_mead_jar"
+    },
+    "facing=south": {
+      "model": "thatsjustpeachy:block/mead_jar/peach_mead_jar",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "thatsjustpeachy:block/mead_jar/peach_mead_jar",
+      "y": 270
+    }
+  }
+}

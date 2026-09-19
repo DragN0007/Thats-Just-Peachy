@@ -1,0 +1,231 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "thatsjustpeachy:peach_candy",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "candies": "2"
+                  }
+                }
+              ],
+              "count": 2.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "thatsjustpeachy:peach_candy",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "candies": "3"
+                  }
+                }
+              ],
+              "count": 3.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "thatsjustpeachy:peach_candy",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "candies": "4"
+                  }
+                }
+              ],
+              "count": 4.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "thatsjustpeachy:peach_candy",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "candies": "5"
+                  }
+                }
+              ],
+              "count": 5.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "thatsjustpeachy:peach_candy",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "candies": "6"
+                  }
+                }
+              ],
+              "count": 6.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "thatsjustpeachy:peach_candy",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "candies": "7"
+                  }
+                }
+              ],
+              "count": 7.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "thatsjustpeachy:peach_candy",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "candies": "8"
+                  }
+                }
+              ],
+              "count": 8.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "thatsjustpeachy:peach_candy",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "candies": "9"
+                  }
+                }
+              ],
+              "count": 9.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "thatsjustpeachy:peach_candy",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "candies": "10"
+                  }
+                }
+              ],
+              "count": 10.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "thatsjustpeachy:peach_candy",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "candies": "11"
+                  }
+                }
+              ],
+              "count": 11.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "thatsjustpeachy:peach_candy",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "candies": "12"
+                  }
+                }
+              ],
+              "count": 12.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "thatsjustpeachy:peach_candy",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "candies": "13"
+                  }
+                }
+              ],
+              "count": 13.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "thatsjustpeachy:peach_candy",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "candies": "14"
+                  }
+                }
+              ],
+              "count": 14.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "thatsjustpeachy:peach_candy",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "candies": "15"
+                  }
+                }
+              ],
+              "count": 15.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "thatsjustpeachy:peach_candy",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "candies": "16"
+                  }
+                }
+              ],
+              "count": 16.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "function": "minecraft:explosion_decay"
+            }
+          ],
+          "name": "thatsjustpeachy:peach_candy"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "thatsjustpeachy:blocks/peach_candy"
+}

@@ -1,0 +1,6 @@
+{
+	"parent": "dragncrops:block/parent/three_meads",
+	"textures": {
+		"texture": "thatsjustpeachy:block/peach_mead"
+	}
+}

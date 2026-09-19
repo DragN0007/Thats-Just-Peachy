@@ -4,9 +4,11 @@ import com.dragn0007.dragncrops.CropOverhaul;
 import com.dragn0007.dragncrops.items.COItems;
 import com.dragn0007.thatsjustpeachy.ThatsJustPeachy;
 import com.dragn0007.thatsjustpeachy.blocks.TJPBlocks;
+import com.dragn0007.thatsjustpeachy.blocks.custom.PeachLantern;
 import com.dragn0007.thatsjustpeachy.items.TJPItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DoorBlock;
@@ -28,7 +30,7 @@ public class TJPItemModelProvider extends ItemModelProvider {
         simpleItem(TJPItems.PEACH_TART);
         simpleItem(TJPItems.PEACH_CANDY);
         simpleItem(TJPItems.PEACH_GELATIN);
-        COadvancedItem(TJPItems.UNFERMENTED_PEACH_MEAD, "unfermented_mead");
+        advancedItem(TJPItems.UNFERMENTED_PEACH_MEAD, "unfermented_mead");
         simpleItem(TJPItems.PEACH_MEAD);
         simpleItem(TJPItems.PEACH_COCKTAIL);
         simpleItem(TJPItems.PEACH_PIE);
@@ -55,11 +57,6 @@ public class TJPItemModelProvider extends ItemModelProvider {
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(ThatsJustPeachy.MODID,"item/" + getTextureName));
     }
-    private ItemModelBuilder COadvancedItem(RegistryObject<Item> item, String getTextureName) {
-        return withExistingParent(item.getId().getPath(),
-                new ResourceLocation("item/generated")).texture("layer0",
-                new ResourceLocation(CropOverhaul.MODID,"item/" + getTextureName));
-    }
     public ItemModelBuilder simpleBlockItem(RegistryObject<Block> item) {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
@@ -81,6 +78,11 @@ public class TJPItemModelProvider extends ItemModelProvider {
                 new ResourceLocation(ThatsJustPeachy.MODID,"item/" + block.getId().getPath()));
     }
     private ItemModelBuilder advancedDoorSpriteBlock(RegistryObject<DoorBlock> block) {
+        return withExistingParent(block.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(ThatsJustPeachy.MODID,"item/" + block.getId().getPath()));
+    }
+    private ItemModelBuilder lanternBlock(RegistryObject<PeachLantern> block) {
         return withExistingParent(block.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(ThatsJustPeachy.MODID,"item/" + block.getId().getPath()));

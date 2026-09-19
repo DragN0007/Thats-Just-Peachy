@@ -1,0 +1,8 @@
+{
+  "parent": "thatsjustpeachy:block/parent/peach_paper_lantern",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "particle": "thatsjustpeachy:block/cyan_peach_paper_lantern",
+    "texture": "thatsjustpeachy:block/cyan_peach_paper_lantern"
+  }
+}

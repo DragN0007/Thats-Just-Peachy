@@ -5,6 +5,7 @@ import com.dragn0007.thatsjustpeachy.blocks.TJPBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -42,6 +43,10 @@ public class TJPItemGroup {
                         output.accept(TJPBlocks.PEACH_DOOR.get());
                         output.accept(TJPBlocks.PEACH_TRAPDOOR.get());
                         for (TJPBlocks.Woods color : TJPBlocks.Woods.values()) {output.accept(TJPBlocks.DOORS.get(color).get());}
+                        output.accept(TJPBlocks.PEACH_PAPER_LANTERN.get());
+                        for (DyeColor color : DyeColor.values()) {output.accept(TJPBlocks.PAPER_LANTERNS.get(color).get());}
+                        output.accept(TJPBlocks.PEACH_LANTERN.get());
+                        for (DyeColor color : DyeColor.values()) {output.accept(TJPBlocks.PEACH_LANTERNS.get(color).get());}
                     }).build());
 
     public static void register(IEventBus eventBus) {

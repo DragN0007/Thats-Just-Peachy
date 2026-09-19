@@ -1,0 +1,44 @@
+{
+  "variants": {
+    "bottles=1": [
+      {
+        "model": "thatsjustpeachy:block/mead/peach/peach_mead"
+      }
+    ],
+    "bottles=2": [
+      {
+        "model": "thatsjustpeachy:block/mead/peach/peach_mead_2"
+      }
+    ],
+    "bottles=3": [
+      {
+        "model": "thatsjustpeachy:block/mead/peach/peach_mead_3"
+      }
+    ],
+    "bottles=4": [
+      {
+        "model": "thatsjustpeachy:block/mead/peach/peach_mead_4"
+      }
+    ],
+    "bottles=5": [
+      {
+        "model": "thatsjustpeachy:block/mead/peach/peach_mead_4"
+      }
+    ],
+    "bottles=6": [
+      {
+        "model": "thatsjustpeachy:block/mead/peach/peach_mead_4"
+      }
+    ],
+    "bottles=7": [
+      {
+        "model": "thatsjustpeachy:block/mead/peach/peach_mead_4"
+      }
+    ],
+    "bottles=8": [
+      {
+        "model": "thatsjustpeachy:block/mead/peach/peach_mead_4"
+      }
+    ]
+  }
+}

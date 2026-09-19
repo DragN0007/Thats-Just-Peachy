@@ -1,0 +1,84 @@
+{
+  "variants": {
+    "jars=1": [
+      {
+        "model": "thatsjustpeachy:block/jam/peach/peach_jam"
+      }
+    ],
+    "jars=2": [
+      {
+        "model": "thatsjustpeachy:block/jam/peach/peach_jam_2"
+      }
+    ],
+    "jars=3": [
+      {
+        "model": "thatsjustpeachy:block/jam/peach/peach_jam_3"
+      }
+    ],
+    "jars=4": [
+      {
+        "model": "thatsjustpeachy:block/jam/peach/peach_jam_4"
+      }
+    ],
+    "jars=5": [
+      {
+        "model": "thatsjustpeachy:block/jam/peach/peach_jam_5"
+      }
+    ],
+    "jars=6": [
+      {
+        "model": "thatsjustpeachy:block/jam/peach/peach_jam_crate"
+      }
+    ],
+    "jars=7": [
+      {
+        "model": "thatsjustpeachy:block/jam/peach/peach_jam_crate"
+      }
+    ],
+    "jars=8": [
+      {
+        "model": "thatsjustpeachy:block/jam/peach/peach_jam_crate"
+      }
+    ],
+    "jars=9": [
+      {
+        "model": "thatsjustpeachy:block/jam/peach/peach_jam_crate"
+      }
+    ],
+    "jars=10": [
+      {
+        "model": "thatsjustpeachy:block/jam/peach/peach_jam_crate"
+      }
+    ],
+    "jars=11": [
+      {
+        "model": "thatsjustpeachy:block/jam/peach/peach_jam_crate"
+      }
+    ],
+    "jars=12": [
+      {
+        "model": "thatsjustpeachy:block/jam/peach/peach_jam_crate"
+      }
+    ],
+    "jars=13": [
+      {
+        "model": "thatsjustpeachy:block/jam/peach/peach_jam_crate"
+      }
+    ],
+    "jars=14": [
+      {
+        "model": "thatsjustpeachy:block/jam/peach/peach_jam_crate"
+      }
+    ],
+    "jars=15": [
+      {
+        "model": "thatsjustpeachy:block/jam/peach/peach_jam_crate"
+      }
+    ],
+    "jars=16": [
+      {
+        "model": "thatsjustpeachy:block/jam/peach/peach_jam_crate"
+      }
+    ]
+  }
+}
